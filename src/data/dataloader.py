@@ -5,6 +5,8 @@ from __future__ import print_function
 import itertools
 import logging
 import math
+import numpy as np
+import torch
 
 import torchvision
 from torch.utils.data import BatchSampler
@@ -12,27 +14,34 @@ from torch.utils.data import DataLoader
 from torch.utils.data import Sampler
 from torch.utils.data import SequentialSampler
 
-from .dataset import CoverStegoDataset, OnTheFly
-from .transform import *
-from .. import utils
+from .dataset import CoverStegoDataset, OnTheFly  # 导入自定义数据集
+from .transform import *  # 导入数据变换
+from .. import utils  # 导入工具模块
 
-logger = logging.getLogger(__name__)
+logger = logging.getLogger(__name__)  # 获取日志记录器
 
 
 class TrainingSampler(Sampler):
+    """训练采样器，用于生成无限序列的索引。"""
 
     def __init__(self, size, seed=None, shuffle=True):
+        """初始化采样器。
+
+        Args:
+            size (int): 数据集大小。
+            seed (int, optional): 随机种子。默认为None。
+            shuffle (bool, optional): 是否打乱数据。默认为True。
+        """
         self._size = size
         self._shuffle = shuffle
-
-        if seed is None:
-            seed = utils.get_random_seed()
-        self._seed = seed
+        self._seed = seed if seed is not None else utils.get_random_seed()
 
     def __iter__(self):
+        """迭代器，生成无限序列的索引。"""
         yield from itertools.islice(self._infinite_indices(), 0, None, 1)
 
     def _infinite_indices(self):
+        """生成无限序列的索引，可以选择是否打乱。"""
         g = torch.Generator()
         g.manual_seed(self._seed)
         while True:
@@ -43,63 +52,70 @@ class TrainingSampler(Sampler):
 
 
 class BalancedBatchSampler(BatchSampler):
+    """平衡批次采样器，确保每个批次中包含来自不同组的样本。"""
 
     def __init__(self, sampler, group_ids, batch_size):
-        """
+        """初始化平衡批次采样器。
+
         Args:
-            sampler (Sampler): Base sampler.
-            group_ids (list[int]): If the sampler produces indices in range [0, N),
-                `group_ids` must be a list of `N` ints which contains the group id of each
-                sample. The group ids must be a set of integers in [0, num_groups).
-            batch_size (int): Size of mini-batch.
+            sampler (Sampler): 基础采样器。
+            group_ids (list[int]): 每个样本的组ID。
+            batch_size (int): 批次大小。
         """
         if not isinstance(sampler, Sampler):
-            raise ValueError("sampler should be an instance of torch.utils.data.Sampler, "
-                             "but got sampler={}".format(sampler))
+            raise ValueError("sampler should be an instance of torch.utils.data.Sampler")
 
         self._sampler = sampler
         self._group_ids = np.asarray(group_ids)
-        assert self._group_ids.ndim == 1
         self._batch_size = batch_size
         groups = np.unique(self._group_ids).tolist()
-        assert batch_size % len(groups) == 0
+        assert batch_size % len(groups) == 0, "批次大小必须能被组数整除"
 
-        # buffer the indices of each group until batch size is reached
         self._buffer_per_group = {k: [] for k in groups}
         self._group_size = batch_size // len(groups)
 
     def __iter__(self):
+        """迭代器，生成平衡的批次索引。"""
         for idx in self._sampler:
             group_id = self._group_ids[idx]
             self._buffer_per_group[group_id].append(idx)
-            if all(len(v) >= self._group_size for k, v in self._buffer_per_group.items()):
+            if all(len(v) >= self._group_size for v in self._buffer_per_group.values()):
                 idxs = []
-                # Collect across all groups
-                for k, v in self._buffer_per_group.items():
+                for v in self._buffer_per_group.values():
                     idxs.extend(v[:self._group_size])
                     del v[:self._group_size]
-
-                idxs = np.random.permutation(idxs)
-                yield idxs
+                yield np.random.permutation(idxs)
 
     def __len__(self):
+        """返回迭代器的长度，此处不定义因为长度不固定。"""
         raise NotImplementedError("len() of GroupedBatchSampler is not well-defined.")
 
 
 def build_train_loader(cover_dir, stego_dir, batch_size=32, num_workers=0):
+    """构建训练数据加载器。
+
+    Args:
+        cover_dir (str): 覆盖图像目录。
+        stego_dir (str): 隐写图像目录。
+        batch_size (int, optional): 批次大小。默认为32。
+        num_workers (int, optional): 工作线程数。默认为0。
+
+    Returns:
+        DataLoader: 训练数据加载器。
+        int: 每个epoch的长度。
+    """
     transform = torchvision.transforms.Compose([
-        RandomRot(),
-        RandomFlip(),
-        ToTensor(),
+        RandomRot(),  # 随机旋转
+        RandomFlip(),  # 随机翻转
+        ToTensor(),  # 转换为张量
     ])
     dataset = CoverStegoDataset(cover_dir, stego_dir, transform)
 
     size = len(dataset)
     sampler = TrainingSampler(size)
-    if stego_dir is not None:
-        batch_sampler = BalancedBatchSampler(sampler, dataset.labels, batch_size)
-    else:
-        batch_sampler = BatchSampler(sampler, batch_size, drop_last=False)
+    batch_sampler = BalancedBatchSampler(sampler, dataset.labels, batch_size) if stego_dir else BatchSampler(sampler,
+                                                                                                             batch_size,
+                                                                                                             drop_last=False)
     epoch_length = math.ceil(size / batch_size)
 
     logger.info('Training set length is {}'.format(size))
@@ -115,6 +131,16 @@ def build_train_loader(cover_dir, stego_dir, batch_size=32, num_workers=0):
 
 
 def build_otf_train_loader(cover_dir, num_workers=0):
+    """构建在线生成训练数据的数据加载器。
+
+    Args:
+        cover_dir (str): 覆盖图像目录。
+        num_workers (int, optional): 工作线程数。默认为0。
+
+    Returns:
+        DataLoader: 训练数据加载器。
+        int: 每个epoch的长度。
+    """
     batch_size = 1
     transform = torchvision.transforms.Compose([
         RandomRot(),
@@ -126,7 +152,7 @@ def build_otf_train_loader(cover_dir, num_workers=0):
     sampler = TrainingSampler(size)
     batch_sampler = BatchSampler(sampler, batch_size, drop_last=False)
 
-    epoch_length = math.ceil(size // batch_size)
+    epoch_length = math.ceil(size / batch_size)
 
     logger.info('Training set length is {}'.format(size))
     logger.info('Training epoch length is {}'.format(epoch_length))
@@ -141,6 +167,17 @@ def build_otf_train_loader(cover_dir, num_workers=0):
 
 
 def build_val_loader(cover_dir, stego_dir, batch_size=32, num_workers=0):
+    """构建验证数据加载器。
+
+    Args:
+        cover_dir (str): 覆盖图像目录。
+        stego_dir (str): 隐写图像目录。
+        batch_size (int, optional): 批次大小。默认为32。
+        num_workers (int, optional): 工作线程数。默认为0。
+
+    Returns:
+        DataLoader: 验证数据加载器。
+    """
     transform = torchvision.transforms.Compose([
         ToTensor(),
     ])
@@ -160,4 +197,9 @@ def build_val_loader(cover_dir, stego_dir, batch_size=32, num_workers=0):
 
 
 def worker_init_reset_seed(worker_id):
+    """工作线程初始化函数，用于重置随机种子。
+
+    Args:
+        worker_id (int): 工作线程ID。
+    """
     utils.set_random_seed(np.random.randint(2 ** 31) + worker_id)

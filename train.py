@@ -1,6 +1,7 @@
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
+#python train.py --train-cover-dir train/cover --val-cover-dir val/cover --train-stego-dir train/stego --val-stego-dir val/stego --model kenet --ckpt-dir checkpoints
 
 import argparse
 import logging
@@ -23,7 +24,22 @@ from src.data import build_otf_train_loader
 from src.matlab import matlab_speedy
 
 logger = logging.getLogger(__name__)
+# 设置日志级别
+logger.setLevel(logging.INFO)
 
+# 创建一个日志格式器
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
+
+# 创建一个日志处理器，这里使用的是控制台处理器
+console_handler = logging.StreamHandler()
+console_handler.setFormatter(formatter)
+
+# 将处理器添加到日志记录器
+logger.addHandler(console_handler)
+
+# 现在可以使用日志记录器了
+logger.info('This is an info message.')
+logger.info('Command Line Arguments: {}')
 
 def parse_args():
     parser = argparse.ArgumentParser()
@@ -71,7 +87,7 @@ def parse_args():
 
 
 def setup(args):
-    os.makedirs(args.ckpt_dir, exist_ok=False)
+    os.makedirs(args.ckpt_dir, exist_ok=True)
 
     args.cuda = args.gpu_id >= 0
     if args.gpu_id >= 0:
@@ -82,7 +98,7 @@ def setup(args):
 
     utils.set_random_seed(None if args.seed < 0 else args.seed)
 
-    logger.info('Command Line Arguments: {}'.format(str(args)))
+    logger.info('Command Line Arguments: {}')
 
 
 args = parse_args()
@@ -178,24 +194,25 @@ def preprocess_data(images, labels, random_crop):
 
 
 def train(epoch):
+    # 设置网络为训练模式
     net.train()
+    # 初始化运行损失和运行准确率为0
     running_loss, running_accuracy = 0., 0.
 
+    # 遍历每个批次
     for batch_idx in range(epoch_length):
+        # 获取下一个批次的数据
         data = next(train_loader_iter)
+        # 预处理数据
         inputs, labels = preprocess_data(data['image'], data['label'], args.random_crop)
 
+        # 清零优化器的梯度
         optimizer.zero_grad()
-        if args.model == 'kenet':  #
+        # 根据模型类型计算输出和损失
+        if args.model == 'kenet':
             outputs, feats_0, feats_1 = net(*inputs)
-
-            # count parameters start
-            # print('parameters_count: {}'.format(sum(p.numel() for p in net.parameters() if p.requires_grad)))
-            # count parameters end
-
             loss = criterion_1(outputs, labels) + \
                    args.alpha * criterion_2(feats_0, feats_1, labels)
-
         elif args.model == 'sid':
             outputs = net(*inputs)
             loss = criterion_1(outputs, labels)
@@ -205,17 +222,23 @@ def train(epoch):
         running_loss += loss.item()
         loss.backward()
         optimizer.step()
+        # 记录训练信息
+        logger.info(
+            f'Train epoch: {epoch} [{batch_idx + 1}/{epoch_length}]\tAccuracy: {100 * running_accuracy:.2f}%\tLoss: {running_loss:.6f}'
+        )
+        # 每(log_interval)个批次后记录日志
         if (batch_idx + 1) % args.log_interval == 0:
+            # 计算平均运行损失和运行准确率
             running_accuracy /= args.log_interval
             running_loss /= args.log_interval
-            
+
+            # 记录训练信息
             logger.info(
-                'Train epoch: {} [{}/{}]\tAccuracy: {:.2f}%\tLoss: {:.6f}'.format(
-                    epoch, batch_idx + 1, epoch_length, 100 * running_accuracy,
-                    running_loss))
-                    
-            ###############################log per log_interval start
-            is_best=False
+                f'Train epoch: {epoch} [{batch_idx + 1}/{epoch_length}]\tAccuracy: {100 * running_accuracy:.2f}%\tLoss: {running_loss:.6f}'
+            )
+
+            # 保存检查点
+            is_best = False
             save_checkpoint(
                 {
                     'iteration': batch_idx + 1,
@@ -226,32 +249,55 @@ def train(epoch):
                 is_best,
                 filename=os.path.join(args.ckpt_dir, 'checkpoint.pth.tar'),
                 best_name=os.path.join(args.ckpt_dir, 'model_best.pth.tar'))
-            ###############################
+
+            # 重置运行损失和运行准确率
             running_loss = 0.
             running_accuracy = 0.
+            # 重新设置网络为训练模式
             net.train()
 
 
 def valid():
+    # 将模型设置为评估模式，关闭Dropout和Batch Normalization等训练特有的层
     net.eval()
+
+    # 初始化验证集的损失和准确率
     valid_loss = 0.
     valid_accuracy = 0.
+
+    # 使用torch.no_grad()来告诉PyTorch我们不会调用.backward()，从而减少内存消耗
     with torch.no_grad():
+        # 遍历验证集的数据加载器
         for data in val_loader:
+            # 对输入图像和标签进行预处理
             inputs, labels = preprocess_data(data['image'], data['label'], False)
 
-            if args.model == 'kenet':  #
+            # 根据不同的模型结构进行前向传播和损失计算
+            if args.model == 'kenet':
+                # KENet模型可能返回多个输出，包括最终输出和中间特征
                 outputs, feats_0, feats_1 = net(*inputs)
+
+                # 计算KENet模型的损失，包括最终输出的损失和中间特征的损失
                 valid_loss += criterion_1(outputs, labels).item() + \
                               args.alpha * criterion_2(feats_0, feats_1, labels)
             elif args.model == 'sid':
+                # SID模型只返回最终输出
                 outputs = net(*inputs)
+
+                # 计算SID模型的损失
                 valid_loss += criterion_1(outputs, labels).item()
+
+            # 计算准确率
             valid_accuracy += src.models.accuracy(outputs, labels).item()
+
+    # 计算验证集的平均损失和平均准确率
     valid_loss /= len(val_loader)
     valid_accuracy /= len(val_loader)
-    logger.info('Test set: Loss: {:.4f}, Accuracy: {:.2f}%)'.format(
-        valid_loss, 100 * valid_accuracy))
+
+    # 使用日志记录器记录验证集的损失和准确率
+    logger.info(f'Test set: Loss: {valid_loss:.4f}, Accuracy: {100 * valid_accuracy:.2f}%')
+
+    # 返回验证集的损失和准确率
     return valid_loss, valid_accuracy
 
 
@@ -264,12 +310,16 @@ def save_checkpoint(state, is_best, filename, best_name):
 _time = time.time()
 best_accuracy = 0.
 for e in range(1, args.epoch + 1):
-    logger.info('Epoch: {}'.format(e))
+
+    logger.info(f'Epoch: {e}')
+
     logger.info('Train')
     train(e)
-    logger.info('Time: {}'.format(time.time() - _time))
+    logger.info(f'Time: {time.time() - _time}')
     logger.info('Test')
-    _, accuracy = valid()
+    valid_loss, accuracy = valid()
+    logger.info(f'Test set: Loss: {valid_loss:.4f}, Accuracy: {100 * accuracy:.2f}%')
+
     if isinstance(scheduler, torch.optim.lr_scheduler.ReduceLROnPlateau):
         scheduler.step(accuracy)
     else:
@@ -279,8 +329,8 @@ for e in range(1, args.epoch + 1):
         is_best = True
     else:
         is_best = False
-    logger.info('Best accuracy: {}'.format(best_accuracy))
-    logger.info('Time: {}'.format(time.time() - _time))
+    logger.info(f'Best accuracy: {best_accuracy}')
+    logger.info(f'Time: {time.time() - _time}')
     save_checkpoint(
         {
             'epoch': e,

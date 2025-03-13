@@ -41,11 +41,10 @@ def configure_logging(level=logging.INFO, file=None, mode='w', format=None, date
         raise ValueError('file should be specified when root_handler_type is 0 or 2')
 
     if format is None:
-        format = '%(asctime)s %(filename)s:%(lineno)d[%(process)d] ' \
-                 '%(levelname)s %(message)s'
+        format = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 
     if datefmt is None:
-        datefmt = '%Y-%m-%d %H:%M:%S.%f'
+        datefmt = '%Y-%m-%d %H:%M:%S'
 
     basic_formatters = {
         'console_formatter': {
