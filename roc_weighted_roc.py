@@ -130,7 +130,7 @@ def alaska_weighted_auc(fpr, tpr):
         val = fpr[mask]
         if val.size == 0:
             st = 0
-        else
+        else:
             st = val[-1]
 
         x_padding = np.linspace(st, 1, 100)
