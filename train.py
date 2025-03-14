@@ -22,7 +22,15 @@ from src.data import build_train_loader
 from src.data import build_val_loader
 from src.data import build_otf_train_loader
 from src.matlab import matlab_speedy
+# Import the summary writer
+from torch.utils.tensorboard import SummaryWriter# Create an instance of the object
 
+log_dir = os.path.join(os.getcwd(), 'log')
+# 检查日志目录是否存在，如果不存在则创建
+if not os.path.exists(log_dir):
+    os.makedirs(log_dir)
+    # 创建SummaryWriter实例，指定日志目录
+writer = SummaryWriter(log_dir=log_dir)
 logger = logging.getLogger(__name__)
 # 设置日志级别
 logger.setLevel(logging.INFO)
@@ -77,7 +85,7 @@ def parse_args():
 
     parser.add_argument('--gpu-id', dest='gpu_id', type=int, default=0)
     parser.add_argument('--seed', dest='seed', type=int, default=-1)
-    parser.add_argument('--log-interval', dest='log_interval', type=int, default=200)
+    parser.add_argument('--log-interval', dest='log_interval', type=int, default=2)
     parser.add_argument('--ckpt-dir', dest='ckpt_dir', type=str, required=True)
     parser.add_argument('--lr-strategy', dest='lr_str', type=int, default=2,
                         help='1: StepLR, 2:MultiStepLR, 3:ExponentialLR, 4:CosineAnnealingLR, 5:ReduceLROnPlateau')
@@ -87,7 +95,8 @@ def parse_args():
 
 
 def setup(args):
-    os.makedirs(args.ckpt_dir, exist_ok=True)
+    # 设定日志目录为当前目录下的"log"文件夹
+
 
     args.cuda = args.gpu_id >= 0
     if args.gpu_id >= 0:
@@ -223,9 +232,7 @@ def train(epoch):
         loss.backward()
         optimizer.step()
         # 记录训练信息
-        logger.info(
-            f'Train epoch: {epoch} [{batch_idx + 1}/{epoch_length}]\tAccuracy: {100 * running_accuracy:.2f}%\tLoss: {running_loss:.6f}'
-        )
+
         # 每(log_interval)个批次后记录日志
         if (batch_idx + 1) % args.log_interval == 0:
             # 计算平均运行损失和运行准确率
@@ -236,6 +243,8 @@ def train(epoch):
             logger.info(
                 f'Train epoch: {epoch} [{batch_idx + 1}/{epoch_length}]\tAccuracy: {100 * running_accuracy:.2f}%\tLoss: {running_loss:.6f}'
             )
+            writer.add_scalar('Train/Loss', running_loss, epoch * epoch_length + batch_idx)
+            writer.add_scalar('Train/Accuracy', running_accuracy, epoch * epoch_length + batch_idx)
 
             # 保存检查点
             is_best = False
@@ -271,7 +280,8 @@ def valid():
         for data in val_loader:
             # 对输入图像和标签进行预处理
             inputs, labels = preprocess_data(data['image'], data['label'], False)
-
+            print(inputs)
+            print(labels)
             # 根据不同的模型结构进行前向传播和损失计算
             if args.model == 'kenet':
                 # KENet模型可能返回多个输出，包括最终输出和中间特征
@@ -341,3 +351,5 @@ for e in range(1, args.epoch + 1):
         is_best,
         filename=os.path.join(args.ckpt_dir, 'checkpoint.pth.tar'),
         best_name=os.path.join(args.ckpt_dir, 'model_best.pth.tar'))
+
+writer.close()
