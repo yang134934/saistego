@@ -1,34 +1,11 @@
-2025-03-14 09:24:54 - src.utils.env - INFO - Using a generated random seed 54470104
-2025-03-14 09:24:54 - __main__ - INFO - Command Line Arguments: {}
-2025-03-14 09:24:54 - __main__ - INFO - Building data loader
-2025-03-14 09:24:54 - src.data.dataloader - INFO - Training set length is 9800
-2025-03-14 09:24:54 - src.data.dataloader - INFO - Training epoch length is 307
-2025-03-14 09:24:54 - src.data.dataloader - INFO - Testing set length is 200
-2025-03-14 09:24:54 - __main__ - INFO - Building model
-2025-03-14 09:24:55 - __main__ - INFO - Epoch: 1
-2025-03-14 09:24:55 - __main__ - INFO - Train
-2025-03-14 09:25:07 - __main__ - INFO - Train epoch: 1 [2/307]	Accuracy: 48.44%	Loss: 0.772181
-2025-03-14 09:25:21 - __main__ - INFO - Train epoch: 1 [4/307]	Accuracy: 51.56%	Loss: 0.786883
-2025-03-14 09:25:34 - __main__ - INFO - Train epoch: 1 [6/307]	Accuracy: 48.44%	Loss: 0.739417
-2025-03-14 09:25:47 - __main__ - INFO - Train epoch: 1 [8/307]	Accuracy: 42.19%	Loss: 0.754727
-2025-03-14 09:26:00 - __main__ - INFO - Train epoch: 1 [10/307]	Accuracy: 42.19%	Loss: 0.747558
-2025-03-14 09:26:13 - __main__ - INFO - Train epoch: 1 [12/307]	Accuracy: 51.56%	Loss: 0.738626
-2025-03-14 09:26:26 - __main__ - INFO - Train epoch: 1 [14/307]	Accuracy: 43.75%	Loss: 0.735248
-2025-03-14 09:26:39 - __main__ - INFO - Train epoch: 1 [16/307]	Accuracy: 53.12%	Loss: 0.778895
-2025-03-14 09:26:53 - __main__ - INFO - Train epoch: 1 [18/307]	Accuracy: 45.31%	Loss: 0.735818
-2025-03-14 09:27:05 - __main__ - INFO - Train epoch: 1 [20/307]	Accuracy: 48.44%	Loss: 0.753267
-2025-03-14 09:27:18 - __main__ - INFO - Train epoch: 1 [22/307]	Accuracy: 51.56%	Loss: 0.778295
-2025-03-14 09:27:31 - __main__ - INFO - Train epoch: 1 [24/307]	Accuracy: 48.44%	Loss: 0.744081
-2025-03-14 09:27:43 - __main__ - INFO - Train epoch: 1 [26/307]	Accuracy: 45.31%	Loss: 0.731979
-2025-03-14 09:27:56 - __main__ - INFO - Train epoch: 1 [28/307]	Accuracy: 46.88%	Loss: 0.737288
-2025-03-14 09:28:09 - __main__ - INFO - Train epoch: 1 [30/307]	Accuracy: 53.12%	Loss: 0.744599
-2025-03-14 09:28:22 - __main__ - INFO - Train epoch: 1 [32/307]	Accuracy: 42.19%	Loss: 0.727425
-2025-03-14 09:28:35 - __main__ - INFO - Train epoch: 1 [34/307]	Accuracy: 43.75%	Loss: 0.775839
-2025-03-14 09:28:47 - __main__ - INFO - Train epoch: 1 [36/307]	Accuracy: 46.88%	Loss: 0.743775
-2025-03-14 09:29:00 - __main__ - INFO - Train epoch: 1 [38/307]	Accuracy: 50.00%	Loss: 0.740621
-2025-03-14 09:29:13 - __main__ - INFO - Train epoch: 1 [40/307]	Accuracy: 56.25%	Loss: 0.722520
-2025-03-14 09:29:26 - __main__ - INFO - Train epoch: 1 [42/307]	Accuracy: 53.12%	Loss: 0.757563
-2025-03-14 09:29:39 - __main__ - INFO - Train epoch: 1 [44/307]	Accuracy: 39.06%	Loss: 0.739319
-2025-03-14 09:29:51 - __main__ - INFO - Train epoch: 1 [46/307]	Accuracy: 43.75%	Loss: 0.743536
-2025-03-14 09:30:04 - __main__ - INFO - Train epoch: 1 [48/307]	Accuracy: 59.38%	Loss: 0.731498
-2025-03-14 09:30:17 - __main__ - INFO - Train epoch: 1 [50/307]	Accuracy: 56.25%	Loss: 0.718137
+2025-03-18 21:31:27 - src.utils.env - INFO - Using a generated random seed 27663054
+2025-03-18 21:31:27 - __main__ - INFO - Command Line Arguments: {}
+2025-03-18 21:31:27 - __main__ - INFO - Building data loader
+2025-03-18 21:31:27 - src.data.dataloader - INFO - Training set length is 2000
+2025-03-18 21:31:27 - src.data.dataloader - INFO - Training epoch length is 63
+2025-03-18 21:31:27 - src.data.dataloader - INFO - Testing set length is 200
+2025-03-18 21:31:27 - __main__ - INFO - Building model
+2025-03-18 21:31:27 - __main__ - INFO - Epoch: 1
+2025-03-18 21:31:27 - __main__ - INFO - Train
+2025-03-18 21:32:30 - __main__ - INFO - Train epoch: 1 [10/63]	Accuracy: 50.00%	Loss: 0.765497
+2025-03-18 21:33:38 - __main__ - INFO - Train epoch: 1 [20/63]	Accuracy: 44.38%	Loss: 0.765017
