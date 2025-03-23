@@ -141,28 +141,57 @@ def build_otf_train_loader(cover_dir, num_workers=0):
         DataLoader: 训练数据加载器。
         int: 每个epoch的长度。
     """
+    # 设置批量大小
     batch_size = 1
+
+    # 定义数据预处理和增强的转换流程
+    # RandomRot(): 随机旋转
+    # RandomFlip(): 随机翻转
+    # ToTensor(): 将图像转换为Tensor
     transform = torchvision.transforms.Compose([
         RandomRot(),
         RandomFlip(),
         ToTensor(),
     ])
+
+    # 创建一个OnTheFly数据集实例，用于动态生成数据
+    # cover_dir: 封面图片目录
+    # transform: 应用到每个样本上的转换
     dataset = OnTheFly(cover_dir, transform=transform)
+
+    # 获取数据集的大小（样本数量）
     size = len(dataset)
+
+    # 创建一个训练采样器，用于随机采样样本
     sampler = TrainingSampler(size)
+
+    # 创建一个批量采样器，用于将样本分组为批次
+    # sampler: 采样器实例
+    # batch_size: 每个批次的样本数量
+    # drop_last: 如果最后一个批次不完整，是否丢弃
     batch_sampler = BatchSampler(sampler, batch_size, drop_last=False)
 
+    # 计算每个epoch的长度，即批次数
+    # math.ceil: 向上取整，确保所有样本都被使用
     epoch_length = math.ceil(size / batch_size)
 
+    # 记录训练集的长度和每个epoch的长度
     logger.info('Training set length is {}'.format(size))
     logger.info('Training epoch length is {}'.format(epoch_length))
 
+    # 创建一个数据加载器，用于在训练过程中加载数据
+    # dataset: 数据集实例
+    # batch_sampler: 批量采样器
+    # num_workers: 用于数据加载的子进程数量
+    # worker_init_fn: 每个工作者进程启动时调用的函数，用于重置随机种子
     train_loader = DataLoader(
         dataset,
         batch_sampler=batch_sampler,
         num_workers=num_workers,
         worker_init_fn=worker_init_reset_seed,
     )
+
+    # 返回训练数据加载器和每个epoch的长度
     return train_loader, epoch_length
 
 

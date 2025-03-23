@@ -1,11 +1,747 @@
-2025-03-18 21:31:27 - src.utils.env - INFO - Using a generated random seed 27663054
-2025-03-18 21:31:27 - __main__ - INFO - Command Line Arguments: {}
-2025-03-18 21:31:27 - __main__ - INFO - Building data loader
-2025-03-18 21:31:27 - src.data.dataloader - INFO - Training set length is 2000
-2025-03-18 21:31:27 - src.data.dataloader - INFO - Training epoch length is 63
-2025-03-18 21:31:27 - src.data.dataloader - INFO - Testing set length is 200
-2025-03-18 21:31:27 - __main__ - INFO - Building model
-2025-03-18 21:31:27 - __main__ - INFO - Epoch: 1
-2025-03-18 21:31:27 - __main__ - INFO - Train
-2025-03-18 21:32:30 - __main__ - INFO - Train epoch: 1 [10/63]	Accuracy: 50.00%	Loss: 0.765497
-2025-03-18 21:33:38 - __main__ - INFO - Train epoch: 1 [20/63]	Accuracy: 44.38%	Loss: 0.765017
+2025-03-23 00:29:08 - src.utils.env - INFO - Using a generated random seed 8526011
+2025-03-23 00:29:08 - __main__ - INFO - Command Line Arguments: {}
+2025-03-23 00:29:08 - __main__ - INFO - Building data loader
+2025-03-23 00:29:10 - src.data.dataloader - INFO - Training set length is 9000
+2025-03-23 00:29:10 - src.data.dataloader - INFO - Training epoch length is 282
+2025-03-23 00:29:10 - src.data.dataloader - INFO - Testing set length is 200
+2025-03-23 00:29:10 - __main__ - INFO - Building model
+2025-03-23 00:29:11 - __main__ - INFO - Epoch: 1
+2025-03-23 00:29:11 - __main__ - INFO - Train
+2025-03-23 00:30:20 - __main__ - INFO - Train epoch: 1 [10/282]	Accuracy: 51.56%	Loss: 0.774895
+2025-03-23 00:31:28 - __main__ - INFO - Train epoch: 1 [20/282]	Accuracy: 52.19%	Loss: 0.753716
+2025-03-23 00:32:37 - __main__ - INFO - Train epoch: 1 [30/282]	Accuracy: 50.00%	Loss: 0.757459
+2025-03-23 00:33:45 - __main__ - INFO - Train epoch: 1 [40/282]	Accuracy: 48.44%	Loss: 0.745272
+2025-03-23 00:34:54 - __main__ - INFO - Train epoch: 1 [50/282]	Accuracy: 53.75%	Loss: 0.748544
+2025-03-23 00:35:59 - __main__ - INFO - Train epoch: 1 [60/282]	Accuracy: 49.69%	Loss: 0.739738
+2025-03-23 00:37:03 - __main__ - INFO - Train epoch: 1 [70/282]	Accuracy: 51.88%	Loss: 0.727804
+2025-03-23 00:38:06 - __main__ - INFO - Train epoch: 1 [80/282]	Accuracy: 42.81%	Loss: 0.729442
+2025-03-23 00:39:10 - __main__ - INFO - Train epoch: 1 [90/282]	Accuracy: 52.81%	Loss: 0.728403
+2025-03-23 00:40:14 - __main__ - INFO - Train epoch: 1 [100/282]	Accuracy: 46.56%	Loss: 0.729362
+2025-03-23 00:41:18 - __main__ - INFO - Train epoch: 1 [110/282]	Accuracy: 48.75%	Loss: 0.726777
+2025-03-23 00:42:22 - __main__ - INFO - Train epoch: 1 [120/282]	Accuracy: 47.50%	Loss: 0.722386
+2025-03-23 00:43:26 - __main__ - INFO - Train epoch: 1 [130/282]	Accuracy: 52.50%	Loss: 0.725801
+2025-03-23 00:44:30 - __main__ - INFO - Train epoch: 1 [140/282]	Accuracy: 51.25%	Loss: 0.725621
+2025-03-23 00:45:34 - __main__ - INFO - Train epoch: 1 [150/282]	Accuracy: 53.75%	Loss: 0.722026
+2025-03-23 00:46:37 - __main__ - INFO - Train epoch: 1 [160/282]	Accuracy: 48.75%	Loss: 0.730005
+2025-03-23 00:47:41 - __main__ - INFO - Train epoch: 1 [170/282]	Accuracy: 50.62%	Loss: 0.725300
+2025-03-23 00:48:45 - __main__ - INFO - Train epoch: 1 [180/282]	Accuracy: 50.31%	Loss: 0.724494
+2025-03-23 00:49:49 - __main__ - INFO - Train epoch: 1 [190/282]	Accuracy: 48.44%	Loss: 0.724374
+2025-03-23 00:50:53 - __main__ - INFO - Train epoch: 1 [200/282]	Accuracy: 47.50%	Loss: 0.727231
+2025-03-23 00:51:56 - __main__ - INFO - Train epoch: 1 [210/282]	Accuracy: 52.50%	Loss: 0.721547
+2025-03-23 00:52:59 - __main__ - INFO - Train epoch: 1 [220/282]	Accuracy: 49.06%	Loss: 0.720617
+2025-03-23 00:54:02 - __main__ - INFO - Train epoch: 1 [230/282]	Accuracy: 54.06%	Loss: 0.723925
+2025-03-23 00:55:05 - __main__ - INFO - Train epoch: 1 [240/282]	Accuracy: 52.81%	Loss: 0.723388
+2025-03-23 00:56:08 - __main__ - INFO - Train epoch: 1 [250/282]	Accuracy: 52.50%	Loss: 0.721805
+2025-03-23 00:57:11 - __main__ - INFO - Train epoch: 1 [260/282]	Accuracy: 48.12%	Loss: 0.727422
+2025-03-23 00:58:14 - __main__ - INFO - Train epoch: 1 [270/282]	Accuracy: 42.81%	Loss: 0.726165
+2025-03-23 00:59:17 - __main__ - INFO - Train epoch: 1 [280/282]	Accuracy: 42.50%	Loss: 0.731634
+2025-03-23 00:59:29 - __main__ - INFO - Time: 1818.8009157180786
+2025-03-23 00:59:29 - __main__ - INFO - Test
+2025-03-23 00:59:35 - __main__ - INFO - Test set: Loss: 0.7248, Accuracy: 54.02%
+2025-03-23 00:59:35 - __main__ - INFO - Test set: Loss: 0.7248, Accuracy: 54.02%
+2025-03-23 00:59:35 - __main__ - INFO - Best accuracy: 0.5401785714285714
+2025-03-23 00:59:35 - __main__ - INFO - Time: 1824.5332782268524
+2025-03-23 00:59:35 - __main__ - INFO - Epoch: 2
+2025-03-23 00:59:35 - __main__ - INFO - Train
+2025-03-23 01:00:34 - __main__ - INFO - Train epoch: 2 [10/282]	Accuracy: 47.81%	Loss: 0.720628
+2025-03-23 01:01:37 - __main__ - INFO - Train epoch: 2 [20/282]	Accuracy: 48.75%	Loss: 0.728056
+2025-03-23 01:02:40 - __main__ - INFO - Train epoch: 2 [30/282]	Accuracy: 51.88%	Loss: 0.723077
+2025-03-23 01:03:43 - __main__ - INFO - Train epoch: 2 [40/282]	Accuracy: 49.69%	Loss: 0.720815
+2025-03-23 01:04:46 - __main__ - INFO - Train epoch: 2 [50/282]	Accuracy: 53.12%	Loss: 0.721158
+2025-03-23 01:05:49 - __main__ - INFO - Train epoch: 2 [60/282]	Accuracy: 50.31%	Loss: 0.725160
+2025-03-23 01:06:52 - __main__ - INFO - Train epoch: 2 [70/282]	Accuracy: 53.12%	Loss: 0.720590
+2025-03-23 01:07:55 - __main__ - INFO - Train epoch: 2 [80/282]	Accuracy: 54.69%	Loss: 0.722361
+2025-03-23 01:08:58 - __main__ - INFO - Train epoch: 2 [90/282]	Accuracy: 53.12%	Loss: 0.720180
+2025-03-23 01:10:01 - __main__ - INFO - Train epoch: 2 [100/282]	Accuracy: 46.25%	Loss: 0.726219
+2025-03-23 01:11:04 - __main__ - INFO - Train epoch: 2 [110/282]	Accuracy: 50.00%	Loss: 0.722049
+2025-03-23 01:12:07 - __main__ - INFO - Train epoch: 2 [120/282]	Accuracy: 54.06%	Loss: 0.719438
+2025-03-23 01:13:10 - __main__ - INFO - Train epoch: 2 [130/282]	Accuracy: 40.00%	Loss: 0.730162
+2025-03-23 01:14:13 - __main__ - INFO - Train epoch: 2 [140/282]	Accuracy: 47.50%	Loss: 0.726189
+2025-03-23 01:15:15 - __main__ - INFO - Train epoch: 2 [150/282]	Accuracy: 53.75%	Loss: 0.718769
+2025-03-23 01:16:18 - __main__ - INFO - Train epoch: 2 [160/282]	Accuracy: 51.25%	Loss: 0.724137
+2025-03-23 01:17:21 - __main__ - INFO - Train epoch: 2 [170/282]	Accuracy: 52.19%	Loss: 0.720015
+2025-03-23 01:18:24 - __main__ - INFO - Train epoch: 2 [180/282]	Accuracy: 49.38%	Loss: 0.725666
+2025-03-23 01:19:27 - __main__ - INFO - Train epoch: 2 [190/282]	Accuracy: 50.94%	Loss: 0.724294
+2025-03-23 01:20:30 - __main__ - INFO - Train epoch: 2 [200/282]	Accuracy: 49.69%	Loss: 0.725696
+2025-03-23 01:21:33 - __main__ - INFO - Train epoch: 2 [210/282]	Accuracy: 46.25%	Loss: 0.728723
+2025-03-23 01:22:36 - __main__ - INFO - Train epoch: 2 [220/282]	Accuracy: 52.19%	Loss: 0.721241
+2025-03-23 01:23:39 - __main__ - INFO - Train epoch: 2 [230/282]	Accuracy: 47.19%	Loss: 0.728116
+2025-03-23 01:24:42 - __main__ - INFO - Train epoch: 2 [240/282]	Accuracy: 50.62%	Loss: 0.721259
+2025-03-23 01:25:45 - __main__ - INFO - Train epoch: 2 [250/282]	Accuracy: 50.94%	Loss: 0.718877
+2025-03-23 01:26:49 - __main__ - INFO - Train epoch: 2 [260/282]	Accuracy: 52.50%	Loss: 0.720963
+2025-03-23 01:27:51 - __main__ - INFO - Train epoch: 2 [270/282]	Accuracy: 45.62%	Loss: 0.728309
+2025-03-23 01:28:54 - __main__ - INFO - Train epoch: 2 [280/282]	Accuracy: 46.25%	Loss: 0.728487
+2025-03-23 01:29:07 - __main__ - INFO - Time: 3596.496346950531
+2025-03-23 01:29:07 - __main__ - INFO - Test
+2025-03-23 01:29:13 - __main__ - INFO - Test set: Loss: 0.7255, Accuracy: 45.98%
+2025-03-23 01:29:13 - __main__ - INFO - Test set: Loss: 0.7255, Accuracy: 45.98%
+2025-03-23 01:29:13 - __main__ - INFO - Best accuracy: 0.5401785714285714
+2025-03-23 01:29:13 - __main__ - INFO - Time: 3601.979492664337
+2025-03-23 01:29:13 - __main__ - INFO - Epoch: 3
+2025-03-23 01:29:13 - __main__ - INFO - Train
+2025-03-23 01:30:12 - __main__ - INFO - Train epoch: 3 [10/282]	Accuracy: 49.69%	Loss: 0.723579
+2025-03-23 01:31:15 - __main__ - INFO - Train epoch: 3 [20/282]	Accuracy: 48.44%	Loss: 0.724157
+2025-03-23 01:32:18 - __main__ - INFO - Train epoch: 3 [30/282]	Accuracy: 48.75%	Loss: 0.726131
+2025-03-23 01:33:20 - __main__ - INFO - Train epoch: 3 [40/282]	Accuracy: 48.12%	Loss: 0.724764
+2025-03-23 01:34:24 - __main__ - INFO - Train epoch: 3 [50/282]	Accuracy: 48.12%	Loss: 0.725485
+2025-03-23 01:35:26 - __main__ - INFO - Train epoch: 3 [60/282]	Accuracy: 44.69%	Loss: 0.727089
+2025-03-23 01:36:29 - __main__ - INFO - Train epoch: 3 [70/282]	Accuracy: 49.06%	Loss: 0.723633
+2025-03-23 01:37:32 - __main__ - INFO - Train epoch: 3 [80/282]	Accuracy: 48.75%	Loss: 0.724226
+2025-03-23 01:38:35 - __main__ - INFO - Train epoch: 3 [90/282]	Accuracy: 52.19%	Loss: 0.721987
+2025-03-23 01:39:38 - __main__ - INFO - Train epoch: 3 [100/282]	Accuracy: 49.69%	Loss: 0.726830
+2025-03-23 01:40:41 - __main__ - INFO - Train epoch: 3 [110/282]	Accuracy: 52.50%	Loss: 0.721747
+2025-03-23 01:41:45 - __main__ - INFO - Train epoch: 3 [120/282]	Accuracy: 50.00%	Loss: 0.722494
+2025-03-23 01:42:48 - __main__ - INFO - Train epoch: 3 [130/282]	Accuracy: 48.12%	Loss: 0.726771
+2025-03-23 01:43:51 - __main__ - INFO - Train epoch: 3 [140/282]	Accuracy: 53.75%	Loss: 0.719899
+2025-03-23 01:44:54 - __main__ - INFO - Train epoch: 3 [150/282]	Accuracy: 55.00%	Loss: 0.720757
+2025-03-23 01:45:57 - __main__ - INFO - Train epoch: 3 [160/282]	Accuracy: 51.56%	Loss: 0.722683
+2025-03-23 01:47:00 - __main__ - INFO - Train epoch: 3 [170/282]	Accuracy: 54.69%	Loss: 0.721844
+2025-03-23 01:48:03 - __main__ - INFO - Train epoch: 3 [180/282]	Accuracy: 54.69%	Loss: 0.718877
+2025-03-23 01:49:06 - __main__ - INFO - Train epoch: 3 [190/282]	Accuracy: 48.44%	Loss: 0.725522
+2025-03-23 01:50:09 - __main__ - INFO - Train epoch: 3 [200/282]	Accuracy: 50.00%	Loss: 0.724753
+2025-03-23 01:51:12 - __main__ - INFO - Train epoch: 3 [210/282]	Accuracy: 51.88%	Loss: 0.723752
+2025-03-23 01:52:15 - __main__ - INFO - Train epoch: 3 [220/282]	Accuracy: 51.25%	Loss: 0.720609
+2025-03-23 01:53:18 - __main__ - INFO - Train epoch: 3 [230/282]	Accuracy: 49.69%	Loss: 0.723039
+2025-03-23 01:54:22 - __main__ - INFO - Train epoch: 3 [240/282]	Accuracy: 45.31%	Loss: 0.726363
+2025-03-23 01:55:24 - __main__ - INFO - Train epoch: 3 [250/282]	Accuracy: 49.38%	Loss: 0.724481
+2025-03-23 01:56:27 - __main__ - INFO - Train epoch: 3 [260/282]	Accuracy: 54.37%	Loss: 0.716664
+2025-03-23 01:57:31 - __main__ - INFO - Train epoch: 3 [270/282]	Accuracy: 47.50%	Loss: 0.727250
+2025-03-23 01:58:34 - __main__ - INFO - Train epoch: 3 [280/282]	Accuracy: 49.38%	Loss: 0.723850
+2025-03-23 01:58:46 - __main__ - INFO - Time: 5375.759604692459
+2025-03-23 01:58:46 - __main__ - INFO - Test
+2025-03-23 01:58:52 - __main__ - INFO - Test set: Loss: 0.7244, Accuracy: 52.68%
+2025-03-23 01:58:52 - __main__ - INFO - Test set: Loss: 0.7244, Accuracy: 52.68%
+2025-03-23 01:58:52 - __main__ - INFO - Best accuracy: 0.5401785714285714
+2025-03-23 01:58:52 - __main__ - INFO - Time: 5381.291458845139
+2025-03-23 01:58:52 - __main__ - INFO - Epoch: 4
+2025-03-23 01:58:52 - __main__ - INFO - Train
+2025-03-23 01:59:51 - __main__ - INFO - Train epoch: 4 [10/282]	Accuracy: 53.44%	Loss: 0.720732
+2025-03-23 02:00:54 - __main__ - INFO - Train epoch: 4 [20/282]	Accuracy: 51.25%	Loss: 0.725227
+2025-03-23 02:01:57 - __main__ - INFO - Train epoch: 4 [30/282]	Accuracy: 50.31%	Loss: 0.722116
+2025-03-23 02:03:00 - __main__ - INFO - Train epoch: 4 [40/282]	Accuracy: 51.25%	Loss: 0.722135
+2025-03-23 02:04:03 - __main__ - INFO - Train epoch: 4 [50/282]	Accuracy: 52.19%	Loss: 0.722336
+2025-03-23 02:05:06 - __main__ - INFO - Train epoch: 4 [60/282]	Accuracy: 50.62%	Loss: 0.724615
+2025-03-23 02:06:09 - __main__ - INFO - Train epoch: 4 [70/282]	Accuracy: 50.00%	Loss: 0.724738
+2025-03-23 02:07:13 - __main__ - INFO - Train epoch: 4 [80/282]	Accuracy: 51.56%	Loss: 0.719030
+2025-03-23 02:08:15 - __main__ - INFO - Train epoch: 4 [90/282]	Accuracy: 50.00%	Loss: 0.723977
+2025-03-23 02:09:19 - __main__ - INFO - Train epoch: 4 [100/282]	Accuracy: 49.38%	Loss: 0.725737
+2025-03-23 02:10:22 - __main__ - INFO - Train epoch: 4 [110/282]	Accuracy: 47.81%	Loss: 0.728841
+2025-03-23 02:11:25 - __main__ - INFO - Train epoch: 4 [120/282]	Accuracy: 50.62%	Loss: 0.723847
+2025-03-23 02:12:28 - __main__ - INFO - Train epoch: 4 [130/282]	Accuracy: 51.88%	Loss: 0.724858
+2025-03-23 02:13:31 - __main__ - INFO - Train epoch: 4 [140/282]	Accuracy: 49.69%	Loss: 0.725025
+2025-03-23 02:14:34 - __main__ - INFO - Train epoch: 4 [150/282]	Accuracy: 54.06%	Loss: 0.718606
+2025-03-23 02:15:37 - __main__ - INFO - Train epoch: 4 [160/282]	Accuracy: 49.06%	Loss: 0.724984
+2025-03-23 02:16:40 - __main__ - INFO - Train epoch: 4 [170/282]	Accuracy: 50.94%	Loss: 0.724915
+2025-03-23 02:17:43 - __main__ - INFO - Train epoch: 4 [180/282]	Accuracy: 50.00%	Loss: 0.720606
+2025-03-23 02:18:46 - __main__ - INFO - Train epoch: 4 [190/282]	Accuracy: 53.75%	Loss: 0.722995
+2025-03-23 02:19:49 - __main__ - INFO - Train epoch: 4 [200/282]	Accuracy: 54.06%	Loss: 0.723762
+2025-03-23 02:20:52 - __main__ - INFO - Train epoch: 4 [210/282]	Accuracy: 45.62%	Loss: 0.728204
+2025-03-23 02:21:55 - __main__ - INFO - Train epoch: 4 [220/282]	Accuracy: 52.81%	Loss: 0.719983
+2025-03-23 02:22:58 - __main__ - INFO - Train epoch: 4 [230/282]	Accuracy: 50.00%	Loss: 0.724723
+2025-03-23 02:24:01 - __main__ - INFO - Train epoch: 4 [240/282]	Accuracy: 58.44%	Loss: 0.716183
+2025-03-23 02:25:05 - __main__ - INFO - Train epoch: 4 [250/282]	Accuracy: 50.31%	Loss: 0.723616
+2025-03-23 02:26:08 - __main__ - INFO - Train epoch: 4 [260/282]	Accuracy: 53.44%	Loss: 0.720998
+2025-03-23 02:27:11 - __main__ - INFO - Train epoch: 4 [270/282]	Accuracy: 49.69%	Loss: 0.725721
+2025-03-23 02:28:14 - __main__ - INFO - Train epoch: 4 [280/282]	Accuracy: 50.31%	Loss: 0.722693
+2025-03-23 02:28:26 - __main__ - INFO - Time: 7155.728208065033
+2025-03-23 02:28:26 - __main__ - INFO - Test
+2025-03-23 02:28:32 - __main__ - INFO - Test set: Loss: 0.7239, Accuracy: 51.34%
+2025-03-23 02:28:32 - __main__ - INFO - Test set: Loss: 0.7239, Accuracy: 51.34%
+2025-03-23 02:28:32 - __main__ - INFO - Best accuracy: 0.5401785714285714
+2025-03-23 02:28:32 - __main__ - INFO - Time: 7161.242798805237
+2025-03-23 02:28:32 - __main__ - INFO - Epoch: 5
+2025-03-23 02:28:32 - __main__ - INFO - Train
+2025-03-23 02:29:31 - __main__ - INFO - Train epoch: 5 [10/282]	Accuracy: 43.12%	Loss: 0.727052
+2025-03-23 02:30:34 - __main__ - INFO - Train epoch: 5 [20/282]	Accuracy: 49.38%	Loss: 0.725466
+2025-03-23 02:31:37 - __main__ - INFO - Train epoch: 5 [30/282]	Accuracy: 52.50%	Loss: 0.720686
+2025-03-23 02:32:40 - __main__ - INFO - Train epoch: 5 [40/282]	Accuracy: 49.69%	Loss: 0.724179
+2025-03-23 02:33:43 - __main__ - INFO - Train epoch: 5 [50/282]	Accuracy: 52.81%	Loss: 0.720071
+2025-03-23 02:34:46 - __main__ - INFO - Train epoch: 5 [60/282]	Accuracy: 49.38%	Loss: 0.722985
+2025-03-23 02:35:49 - __main__ - INFO - Train epoch: 5 [70/282]	Accuracy: 52.81%	Loss: 0.720264
+2025-03-23 02:36:52 - __main__ - INFO - Train epoch: 5 [80/282]	Accuracy: 47.19%	Loss: 0.729950
+2025-03-23 02:37:56 - __main__ - INFO - Train epoch: 5 [90/282]	Accuracy: 45.94%	Loss: 0.725904
+2025-03-23 02:38:59 - __main__ - INFO - Train epoch: 5 [100/282]	Accuracy: 50.00%	Loss: 0.724916
+2025-03-23 02:40:01 - __main__ - INFO - Train epoch: 5 [110/282]	Accuracy: 47.50%	Loss: 0.726852
+2025-03-23 02:41:05 - __main__ - INFO - Train epoch: 5 [120/282]	Accuracy: 46.88%	Loss: 0.725600
+2025-03-23 02:42:08 - __main__ - INFO - Train epoch: 5 [130/282]	Accuracy: 47.19%	Loss: 0.723600
+2025-03-23 02:43:11 - __main__ - INFO - Train epoch: 5 [140/282]	Accuracy: 51.25%	Loss: 0.725303
+2025-03-23 02:44:15 - __main__ - INFO - Train epoch: 5 [150/282]	Accuracy: 50.00%	Loss: 0.725999
+2025-03-23 02:45:18 - __main__ - INFO - Train epoch: 5 [160/282]	Accuracy: 52.50%	Loss: 0.718762
+2025-03-23 02:46:21 - __main__ - INFO - Train epoch: 5 [170/282]	Accuracy: 48.75%	Loss: 0.720924
+2025-03-23 02:47:24 - __main__ - INFO - Train epoch: 5 [180/282]	Accuracy: 50.31%	Loss: 0.726746
+2025-03-23 02:48:27 - __main__ - INFO - Train epoch: 5 [190/282]	Accuracy: 49.06%	Loss: 0.723226
+2025-03-23 02:49:30 - __main__ - INFO - Train epoch: 5 [200/282]	Accuracy: 47.81%	Loss: 0.722721
+2025-03-23 02:50:33 - __main__ - INFO - Train epoch: 5 [210/282]	Accuracy: 44.06%	Loss: 0.730636
+2025-03-23 02:51:36 - __main__ - INFO - Train epoch: 5 [220/282]	Accuracy: 51.56%	Loss: 0.719425
+2025-03-23 02:52:39 - __main__ - INFO - Train epoch: 5 [230/282]	Accuracy: 47.81%	Loss: 0.729973
+2025-03-23 02:53:42 - __main__ - INFO - Train epoch: 5 [240/282]	Accuracy: 50.62%	Loss: 0.722810
+2025-03-23 02:54:45 - __main__ - INFO - Train epoch: 5 [250/282]	Accuracy: 47.50%	Loss: 0.722868
+2025-03-23 02:55:48 - __main__ - INFO - Train epoch: 5 [260/282]	Accuracy: 51.88%	Loss: 0.722193
+2025-03-23 02:56:52 - __main__ - INFO - Train epoch: 5 [270/282]	Accuracy: 52.50%	Loss: 0.721761
+2025-03-23 02:57:55 - __main__ - INFO - Train epoch: 5 [280/282]	Accuracy: 52.19%	Loss: 0.721347
+2025-03-23 02:58:07 - __main__ - INFO - Time: 8936.850696325302
+2025-03-23 02:58:07 - __main__ - INFO - Test
+2025-03-23 02:58:13 - __main__ - INFO - Test set: Loss: 0.7244, Accuracy: 51.34%
+2025-03-23 02:58:13 - __main__ - INFO - Test set: Loss: 0.7244, Accuracy: 51.34%
+2025-03-23 02:58:13 - __main__ - INFO - Best accuracy: 0.5401785714285714
+2025-03-23 02:58:13 - __main__ - INFO - Time: 8942.27778506279
+2025-03-23 02:58:13 - __main__ - INFO - Epoch: 6
+2025-03-23 02:58:13 - __main__ - INFO - Train
+2025-03-23 02:59:12 - __main__ - INFO - Train epoch: 6 [10/282]	Accuracy: 50.94%	Loss: 0.720812
+2025-03-23 03:00:15 - __main__ - INFO - Train epoch: 6 [20/282]	Accuracy: 49.69%	Loss: 0.727674
+2025-03-23 03:01:18 - __main__ - INFO - Train epoch: 6 [30/282]	Accuracy: 49.38%	Loss: 0.726669
+2025-03-23 03:02:21 - __main__ - INFO - Train epoch: 6 [40/282]	Accuracy: 49.06%	Loss: 0.725694
+2025-03-23 03:03:24 - __main__ - INFO - Train epoch: 6 [50/282]	Accuracy: 49.06%	Loss: 0.724370
+2025-03-23 03:04:27 - __main__ - INFO - Train epoch: 6 [60/282]	Accuracy: 46.25%	Loss: 0.726319
+2025-03-23 03:05:30 - __main__ - INFO - Train epoch: 6 [70/282]	Accuracy: 49.38%	Loss: 0.726837
+2025-03-23 03:06:33 - __main__ - INFO - Train epoch: 6 [80/282]	Accuracy: 47.19%	Loss: 0.727414
+2025-03-23 03:07:36 - __main__ - INFO - Train epoch: 6 [90/282]	Accuracy: 53.75%	Loss: 0.717634
+2025-03-23 03:08:39 - __main__ - INFO - Train epoch: 6 [100/282]	Accuracy: 52.50%	Loss: 0.723128
+2025-03-23 03:09:42 - __main__ - INFO - Train epoch: 6 [110/282]	Accuracy: 50.94%	Loss: 0.720699
+2025-03-23 03:10:45 - __main__ - INFO - Train epoch: 6 [120/282]	Accuracy: 55.62%	Loss: 0.719515
+2025-03-23 03:11:48 - __main__ - INFO - Train epoch: 6 [130/282]	Accuracy: 50.62%	Loss: 0.723261
+2025-03-23 03:12:52 - __main__ - INFO - Train epoch: 6 [140/282]	Accuracy: 47.81%	Loss: 0.724286
+2025-03-23 03:13:55 - __main__ - INFO - Train epoch: 6 [150/282]	Accuracy: 53.44%	Loss: 0.723233
+2025-03-23 03:14:58 - __main__ - INFO - Train epoch: 6 [160/282]	Accuracy: 46.88%	Loss: 0.724324
+2025-03-23 03:16:01 - __main__ - INFO - Train epoch: 6 [170/282]	Accuracy: 52.19%	Loss: 0.722547
+2025-03-23 03:17:04 - __main__ - INFO - Train epoch: 6 [180/282]	Accuracy: 48.75%	Loss: 0.724378
+2025-03-23 03:18:07 - __main__ - INFO - Train epoch: 6 [190/282]	Accuracy: 52.81%	Loss: 0.722069
+2025-03-23 03:19:10 - __main__ - INFO - Train epoch: 6 [200/282]	Accuracy: 54.06%	Loss: 0.723613
+2025-03-23 03:20:13 - __main__ - INFO - Train epoch: 6 [210/282]	Accuracy: 50.62%	Loss: 0.726515
+2025-03-23 03:21:16 - __main__ - INFO - Train epoch: 6 [220/282]	Accuracy: 45.62%	Loss: 0.726530
+2025-03-23 03:22:19 - __main__ - INFO - Train epoch: 6 [230/282]	Accuracy: 53.75%	Loss: 0.721772
+2025-03-23 03:23:23 - __main__ - INFO - Train epoch: 6 [240/282]	Accuracy: 47.50%	Loss: 0.724704
+2025-03-23 03:24:25 - __main__ - INFO - Train epoch: 6 [250/282]	Accuracy: 49.69%	Loss: 0.720101
+2025-03-23 03:25:29 - __main__ - INFO - Train epoch: 6 [260/282]	Accuracy: 47.50%	Loss: 0.725433
+2025-03-23 03:26:32 - __main__ - INFO - Train epoch: 6 [270/282]	Accuracy: 54.69%	Loss: 0.718189
+2025-03-23 03:27:35 - __main__ - INFO - Train epoch: 6 [280/282]	Accuracy: 45.31%	Loss: 0.726385
+2025-03-23 03:27:48 - __main__ - INFO - Time: 10716.959864377975
+2025-03-23 03:27:48 - __main__ - INFO - Test
+2025-03-23 03:27:53 - __main__ - INFO - Test set: Loss: 0.7242, Accuracy: 52.68%
+2025-03-23 03:27:53 - __main__ - INFO - Test set: Loss: 0.7242, Accuracy: 52.68%
+2025-03-23 03:27:53 - __main__ - INFO - Best accuracy: 0.5401785714285714
+2025-03-23 03:27:53 - __main__ - INFO - Time: 10722.435077667236
+2025-03-23 03:27:53 - __main__ - INFO - Epoch: 7
+2025-03-23 03:27:53 - __main__ - INFO - Train
+2025-03-23 03:28:52 - __main__ - INFO - Train epoch: 7 [10/282]	Accuracy: 52.50%	Loss: 0.723274
+2025-03-23 03:29:55 - __main__ - INFO - Train epoch: 7 [20/282]	Accuracy: 50.94%	Loss: 0.724977
+2025-03-23 03:30:58 - __main__ - INFO - Train epoch: 7 [30/282]	Accuracy: 53.44%	Loss: 0.719849
+2025-03-23 03:32:02 - __main__ - INFO - Train epoch: 7 [40/282]	Accuracy: 50.00%	Loss: 0.724398
+2025-03-23 03:33:05 - __main__ - INFO - Train epoch: 7 [50/282]	Accuracy: 49.38%	Loss: 0.722687
+2025-03-23 03:34:08 - __main__ - INFO - Train epoch: 7 [60/282]	Accuracy: 47.50%	Loss: 0.725540
+2025-03-23 03:35:11 - __main__ - INFO - Train epoch: 7 [70/282]	Accuracy: 53.12%	Loss: 0.720025
+2025-03-23 03:36:14 - __main__ - INFO - Train epoch: 7 [80/282]	Accuracy: 51.25%	Loss: 0.721002
+2025-03-23 03:37:17 - __main__ - INFO - Train epoch: 7 [90/282]	Accuracy: 48.75%	Loss: 0.725695
+2025-03-23 03:38:21 - __main__ - INFO - Train epoch: 7 [100/282]	Accuracy: 50.31%	Loss: 0.721570
+2025-03-23 03:39:24 - __main__ - INFO - Train epoch: 7 [110/282]	Accuracy: 45.94%	Loss: 0.724956
+2025-03-23 03:40:27 - __main__ - INFO - Train epoch: 7 [120/282]	Accuracy: 50.62%	Loss: 0.722138
+2025-03-23 03:41:30 - __main__ - INFO - Train epoch: 7 [130/282]	Accuracy: 49.06%	Loss: 0.724076
+2025-03-23 03:42:34 - __main__ - INFO - Train epoch: 7 [140/282]	Accuracy: 48.44%	Loss: 0.726819
+2025-03-23 03:43:37 - __main__ - INFO - Train epoch: 7 [150/282]	Accuracy: 50.31%	Loss: 0.720676
+2025-03-23 03:44:40 - __main__ - INFO - Train epoch: 7 [160/282]	Accuracy: 49.69%	Loss: 0.720599
+2025-03-23 03:45:43 - __main__ - INFO - Train epoch: 7 [170/282]	Accuracy: 50.31%	Loss: 0.722735
+2025-03-23 03:46:46 - __main__ - INFO - Train epoch: 7 [180/282]	Accuracy: 49.06%	Loss: 0.724154
+2025-03-23 03:47:50 - __main__ - INFO - Train epoch: 7 [190/282]	Accuracy: 54.06%	Loss: 0.721083
+2025-03-23 03:48:53 - __main__ - INFO - Train epoch: 7 [200/282]	Accuracy: 47.81%	Loss: 0.724418
+2025-03-23 03:49:56 - __main__ - INFO - Train epoch: 7 [210/282]	Accuracy: 49.06%	Loss: 0.728028
+2025-03-23 03:50:59 - __main__ - INFO - Train epoch: 7 [220/282]	Accuracy: 50.00%	Loss: 0.724358
+2025-03-23 03:52:03 - __main__ - INFO - Train epoch: 7 [230/282]	Accuracy: 48.12%	Loss: 0.726044
+2025-03-23 03:53:06 - __main__ - INFO - Train epoch: 7 [240/282]	Accuracy: 51.25%	Loss: 0.719466
+2025-03-23 03:54:09 - __main__ - INFO - Train epoch: 7 [250/282]	Accuracy: 43.75%	Loss: 0.728667
+2025-03-23 03:55:12 - __main__ - INFO - Train epoch: 7 [260/282]	Accuracy: 50.62%	Loss: 0.720379
+2025-03-23 03:56:15 - __main__ - INFO - Train epoch: 7 [270/282]	Accuracy: 49.06%	Loss: 0.721222
+2025-03-23 03:57:18 - __main__ - INFO - Train epoch: 7 [280/282]	Accuracy: 45.00%	Loss: 0.727180
+2025-03-23 03:57:31 - __main__ - INFO - Time: 12500.191723585129
+2025-03-23 03:57:31 - __main__ - INFO - Test
+2025-03-23 03:57:36 - __main__ - INFO - Test set: Loss: 0.7239, Accuracy: 53.12%
+2025-03-23 03:57:36 - __main__ - INFO - Test set: Loss: 0.7239, Accuracy: 53.12%
+2025-03-23 03:57:36 - __main__ - INFO - Best accuracy: 0.5401785714285714
+2025-03-23 03:57:36 - __main__ - INFO - Time: 12505.661885261536
+2025-03-23 03:57:36 - __main__ - INFO - Epoch: 8
+2025-03-23 03:57:36 - __main__ - INFO - Train
+2025-03-23 03:58:35 - __main__ - INFO - Train epoch: 8 [10/282]	Accuracy: 51.88%	Loss: 0.718575
+2025-03-23 03:59:39 - __main__ - INFO - Train epoch: 8 [20/282]	Accuracy: 49.38%	Loss: 0.724137
+2025-03-23 04:00:42 - __main__ - INFO - Train epoch: 8 [30/282]	Accuracy: 49.69%	Loss: 0.722246
+2025-03-23 04:01:45 - __main__ - INFO - Train epoch: 8 [40/282]	Accuracy: 45.00%	Loss: 0.728972
+2025-03-23 04:02:48 - __main__ - INFO - Train epoch: 8 [50/282]	Accuracy: 50.94%	Loss: 0.722661
+2025-03-23 04:03:51 - __main__ - INFO - Train epoch: 8 [60/282]	Accuracy: 50.62%	Loss: 0.722385
+2025-03-23 04:04:54 - __main__ - INFO - Train epoch: 8 [70/282]	Accuracy: 48.44%	Loss: 0.724035
+2025-03-23 04:05:58 - __main__ - INFO - Train epoch: 8 [80/282]	Accuracy: 50.00%	Loss: 0.723324
+2025-03-23 04:07:01 - __main__ - INFO - Train epoch: 8 [90/282]	Accuracy: 48.75%	Loss: 0.726156
+2025-03-23 04:08:04 - __main__ - INFO - Train epoch: 8 [100/282]	Accuracy: 50.94%	Loss: 0.725506
+2025-03-23 04:09:07 - __main__ - INFO - Train epoch: 8 [110/282]	Accuracy: 47.81%	Loss: 0.727458
+2025-03-23 04:10:11 - __main__ - INFO - Train epoch: 8 [120/282]	Accuracy: 51.56%	Loss: 0.722027
+2025-03-23 04:11:14 - __main__ - INFO - Train epoch: 8 [130/282]	Accuracy: 50.62%	Loss: 0.723109
+2025-03-23 04:12:17 - __main__ - INFO - Train epoch: 8 [140/282]	Accuracy: 47.81%	Loss: 0.723833
+2025-03-23 04:13:20 - __main__ - INFO - Train epoch: 8 [150/282]	Accuracy: 48.12%	Loss: 0.725238
+2025-03-23 04:14:23 - __main__ - INFO - Train epoch: 8 [160/282]	Accuracy: 44.06%	Loss: 0.729538
+2025-03-23 04:15:26 - __main__ - INFO - Train epoch: 8 [170/282]	Accuracy: 48.12%	Loss: 0.726312
+2025-03-23 04:16:29 - __main__ - INFO - Train epoch: 8 [180/282]	Accuracy: 49.38%	Loss: 0.723470
+2025-03-23 04:17:32 - __main__ - INFO - Train epoch: 8 [190/282]	Accuracy: 51.88%	Loss: 0.724195
+2025-03-23 04:18:36 - __main__ - INFO - Train epoch: 8 [200/282]	Accuracy: 51.56%	Loss: 0.720310
+2025-03-23 04:19:39 - __main__ - INFO - Train epoch: 8 [210/282]	Accuracy: 50.31%	Loss: 0.724680
+2025-03-23 04:20:42 - __main__ - INFO - Train epoch: 8 [220/282]	Accuracy: 52.19%	Loss: 0.724026
+2025-03-23 04:21:45 - __main__ - INFO - Train epoch: 8 [230/282]	Accuracy: 51.56%	Loss: 0.721105
+2025-03-23 04:22:48 - __main__ - INFO - Train epoch: 8 [240/282]	Accuracy: 47.50%	Loss: 0.722838
+2025-03-23 04:23:51 - __main__ - INFO - Train epoch: 8 [250/282]	Accuracy: 44.69%	Loss: 0.726484
+2025-03-23 04:24:55 - __main__ - INFO - Train epoch: 8 [260/282]	Accuracy: 47.81%	Loss: 0.728548
+2025-03-23 04:25:58 - __main__ - INFO - Train epoch: 8 [270/282]	Accuracy: 50.31%	Loss: 0.721299
+2025-03-23 04:27:01 - __main__ - INFO - Train epoch: 8 [280/282]	Accuracy: 49.38%	Loss: 0.723116
+2025-03-23 04:27:14 - __main__ - INFO - Time: 14283.160219192505
+2025-03-23 04:27:14 - __main__ - INFO - Test
+2025-03-23 04:27:19 - __main__ - INFO - Test set: Loss: 0.7249, Accuracy: 48.66%
+2025-03-23 04:27:19 - __main__ - INFO - Test set: Loss: 0.7249, Accuracy: 48.66%
+2025-03-23 04:27:19 - __main__ - INFO - Best accuracy: 0.5401785714285714
+2025-03-23 04:27:19 - __main__ - INFO - Time: 14288.58860373497
+2025-03-23 04:27:19 - __main__ - INFO - Epoch: 9
+2025-03-23 04:27:19 - __main__ - INFO - Train
+2025-03-23 04:28:19 - __main__ - INFO - Train epoch: 9 [10/282]	Accuracy: 47.81%	Loss: 0.721540
+2025-03-23 04:29:22 - __main__ - INFO - Train epoch: 9 [20/282]	Accuracy: 55.62%	Loss: 0.718509
+2025-03-23 04:30:25 - __main__ - INFO - Train epoch: 9 [30/282]	Accuracy: 51.56%	Loss: 0.722033
+2025-03-23 04:31:28 - __main__ - INFO - Train epoch: 9 [40/282]	Accuracy: 48.44%	Loss: 0.724787
+2025-03-23 04:32:31 - __main__ - INFO - Train epoch: 9 [50/282]	Accuracy: 48.75%	Loss: 0.725339
+2025-03-23 04:33:34 - __main__ - INFO - Train epoch: 9 [60/282]	Accuracy: 50.62%	Loss: 0.724694
+2025-03-23 04:34:38 - __main__ - INFO - Train epoch: 9 [70/282]	Accuracy: 46.25%	Loss: 0.726701
+2025-03-23 04:35:41 - __main__ - INFO - Train epoch: 9 [80/282]	Accuracy: 51.56%	Loss: 0.718305
+2025-03-23 04:36:44 - __main__ - INFO - Train epoch: 9 [90/282]	Accuracy: 48.75%	Loss: 0.724068
+2025-03-23 04:37:48 - __main__ - INFO - Train epoch: 9 [100/282]	Accuracy: 48.12%	Loss: 0.726745
+2025-03-23 04:38:51 - __main__ - INFO - Train epoch: 9 [110/282]	Accuracy: 48.44%	Loss: 0.727912
+2025-03-23 04:39:54 - __main__ - INFO - Train epoch: 9 [120/282]	Accuracy: 51.25%	Loss: 0.719421
+2025-03-23 04:40:57 - __main__ - INFO - Train epoch: 9 [130/282]	Accuracy: 48.75%	Loss: 0.723816
+2025-03-23 04:42:01 - __main__ - INFO - Train epoch: 9 [140/282]	Accuracy: 50.00%	Loss: 0.725388
+2025-03-23 04:43:04 - __main__ - INFO - Train epoch: 9 [150/282]	Accuracy: 51.25%	Loss: 0.723758
+2025-03-23 04:44:07 - __main__ - INFO - Train epoch: 9 [160/282]	Accuracy: 45.94%	Loss: 0.727236
+2025-03-23 04:45:10 - __main__ - INFO - Train epoch: 9 [170/282]	Accuracy: 49.69%	Loss: 0.722005
+2025-03-23 04:46:14 - __main__ - INFO - Train epoch: 9 [180/282]	Accuracy: 51.25%	Loss: 0.724622
+2025-03-23 04:47:17 - __main__ - INFO - Train epoch: 9 [190/282]	Accuracy: 44.69%	Loss: 0.726446
+2025-03-23 04:48:20 - __main__ - INFO - Train epoch: 9 [200/282]	Accuracy: 51.88%	Loss: 0.721837
+2025-03-23 04:49:23 - __main__ - INFO - Train epoch: 9 [210/282]	Accuracy: 52.19%	Loss: 0.723646
+2025-03-23 04:50:26 - __main__ - INFO - Train epoch: 9 [220/282]	Accuracy: 51.25%	Loss: 0.725279
+2025-03-23 04:51:30 - __main__ - INFO - Train epoch: 9 [230/282]	Accuracy: 50.62%	Loss: 0.723895
+2025-03-23 04:52:33 - __main__ - INFO - Train epoch: 9 [240/282]	Accuracy: 48.12%	Loss: 0.726536
+2025-03-23 04:53:36 - __main__ - INFO - Train epoch: 9 [250/282]	Accuracy: 53.12%	Loss: 0.719525
+2025-03-23 04:54:39 - __main__ - INFO - Train epoch: 9 [260/282]	Accuracy: 51.56%	Loss: 0.724404
+2025-03-23 04:55:42 - __main__ - INFO - Train epoch: 9 [270/282]	Accuracy: 47.50%	Loss: 0.725974
+2025-03-23 04:56:45 - __main__ - INFO - Train epoch: 9 [280/282]	Accuracy: 50.62%	Loss: 0.725062
+2025-03-23 04:56:58 - __main__ - INFO - Time: 16067.144275426865
+2025-03-23 04:56:58 - __main__ - INFO - Test
+2025-03-23 04:57:03 - __main__ - INFO - Test set: Loss: 0.7250, Accuracy: 48.66%
+2025-03-23 04:57:03 - __main__ - INFO - Test set: Loss: 0.7250, Accuracy: 48.66%
+2025-03-23 04:57:03 - __main__ - INFO - Best accuracy: 0.5401785714285714
+2025-03-23 04:57:03 - __main__ - INFO - Time: 16072.650309324265
+2025-03-23 04:57:03 - __main__ - INFO - Epoch: 10
+2025-03-23 04:57:03 - __main__ - INFO - Train
+2025-03-23 04:58:02 - __main__ - INFO - Train epoch: 10 [10/282]	Accuracy: 49.38%	Loss: 0.722538
+2025-03-23 04:59:05 - __main__ - INFO - Train epoch: 10 [20/282]	Accuracy: 54.37%	Loss: 0.720019
+2025-03-23 05:00:08 - __main__ - INFO - Train epoch: 10 [30/282]	Accuracy: 44.69%	Loss: 0.726877
+2025-03-23 05:01:12 - __main__ - INFO - Train epoch: 10 [40/282]	Accuracy: 48.44%	Loss: 0.724991
+2025-03-23 05:02:15 - __main__ - INFO - Train epoch: 10 [50/282]	Accuracy: 49.69%	Loss: 0.727871
+2025-03-23 05:03:18 - __main__ - INFO - Train epoch: 10 [60/282]	Accuracy: 46.25%	Loss: 0.725089
+2025-03-23 05:04:21 - __main__ - INFO - Train epoch: 10 [70/282]	Accuracy: 51.88%	Loss: 0.722221
+2025-03-23 05:05:24 - __main__ - INFO - Train epoch: 10 [80/282]	Accuracy: 44.69%	Loss: 0.728596
+2025-03-23 05:06:27 - __main__ - INFO - Train epoch: 10 [90/282]	Accuracy: 49.38%	Loss: 0.726206
+2025-03-23 05:07:30 - __main__ - INFO - Train epoch: 10 [100/282]	Accuracy: 50.00%	Loss: 0.722888
+2025-03-23 05:08:34 - __main__ - INFO - Train epoch: 10 [110/282]	Accuracy: 51.88%	Loss: 0.721563
+2025-03-23 05:09:37 - __main__ - INFO - Train epoch: 10 [120/282]	Accuracy: 51.88%	Loss: 0.721692
+2025-03-23 05:10:40 - __main__ - INFO - Train epoch: 10 [130/282]	Accuracy: 48.44%	Loss: 0.722803
+2025-03-23 05:11:43 - __main__ - INFO - Train epoch: 10 [140/282]	Accuracy: 54.69%	Loss: 0.718490
+2025-03-23 05:12:46 - __main__ - INFO - Train epoch: 10 [150/282]	Accuracy: 45.00%	Loss: 0.726159
+2025-03-23 05:13:49 - __main__ - INFO - Train epoch: 10 [160/282]	Accuracy: 50.00%	Loss: 0.723603
+2025-03-23 05:14:52 - __main__ - INFO - Train epoch: 10 [170/282]	Accuracy: 49.06%	Loss: 0.723918
+2025-03-23 05:15:55 - __main__ - INFO - Train epoch: 10 [180/282]	Accuracy: 49.06%	Loss: 0.724772
+2025-03-23 05:16:59 - __main__ - INFO - Train epoch: 10 [190/282]	Accuracy: 48.75%	Loss: 0.722775
+2025-03-23 05:18:02 - __main__ - INFO - Train epoch: 10 [200/282]	Accuracy: 47.81%	Loss: 0.727146
+2025-03-23 05:19:05 - __main__ - INFO - Train epoch: 10 [210/282]	Accuracy: 45.94%	Loss: 0.728655
+2025-03-23 05:20:08 - __main__ - INFO - Train epoch: 10 [220/282]	Accuracy: 46.88%	Loss: 0.724503
+2025-03-23 05:21:11 - __main__ - INFO - Train epoch: 10 [230/282]	Accuracy: 46.25%	Loss: 0.722486
+2025-03-23 05:22:14 - __main__ - INFO - Train epoch: 10 [240/282]	Accuracy: 47.50%	Loss: 0.724329
+2025-03-23 05:23:17 - __main__ - INFO - Train epoch: 10 [250/282]	Accuracy: 49.06%	Loss: 0.722338
+2025-03-23 05:24:21 - __main__ - INFO - Train epoch: 10 [260/282]	Accuracy: 50.62%	Loss: 0.723547
+2025-03-23 05:25:24 - __main__ - INFO - Train epoch: 10 [270/282]	Accuracy: 46.88%	Loss: 0.726217
+2025-03-23 05:26:27 - __main__ - INFO - Train epoch: 10 [280/282]	Accuracy: 50.62%	Loss: 0.725437
+2025-03-23 05:26:40 - __main__ - INFO - Time: 17848.981099128723
+2025-03-23 05:26:40 - __main__ - INFO - Test
+2025-03-23 05:26:45 - __main__ - INFO - Test set: Loss: 0.7243, Accuracy: 51.34%
+2025-03-23 05:26:45 - __main__ - INFO - Test set: Loss: 0.7243, Accuracy: 51.34%
+2025-03-23 05:26:45 - __main__ - INFO - Best accuracy: 0.5401785714285714
+2025-03-23 05:26:45 - __main__ - INFO - Time: 17854.495432138443
+2025-03-23 05:26:45 - __main__ - INFO - Epoch: 11
+2025-03-23 05:26:45 - __main__ - INFO - Train
+2025-03-23 05:27:44 - __main__ - INFO - Train epoch: 11 [10/282]	Accuracy: 49.69%	Loss: 0.724405
+2025-03-23 05:28:48 - __main__ - INFO - Train epoch: 11 [20/282]	Accuracy: 40.31%	Loss: 0.730234
+2025-03-23 05:29:51 - __main__ - INFO - Train epoch: 11 [30/282]	Accuracy: 51.56%	Loss: 0.722350
+2025-03-23 05:30:54 - __main__ - INFO - Train epoch: 11 [40/282]	Accuracy: 52.19%	Loss: 0.720794
+2025-03-23 05:31:57 - __main__ - INFO - Train epoch: 11 [50/282]	Accuracy: 49.69%	Loss: 0.722965
+2025-03-23 05:33:00 - __main__ - INFO - Train epoch: 11 [60/282]	Accuracy: 53.75%	Loss: 0.722192
+2025-03-23 05:34:03 - __main__ - INFO - Train epoch: 11 [70/282]	Accuracy: 46.88%	Loss: 0.728177
+2025-03-23 05:35:07 - __main__ - INFO - Train epoch: 11 [80/282]	Accuracy: 51.25%	Loss: 0.720859
+2025-03-23 05:36:10 - __main__ - INFO - Train epoch: 11 [90/282]	Accuracy: 50.00%	Loss: 0.724116
+2025-03-23 05:37:13 - __main__ - INFO - Train epoch: 11 [100/282]	Accuracy: 50.00%	Loss: 0.723049
+2025-03-23 05:38:16 - __main__ - INFO - Train epoch: 11 [110/282]	Accuracy: 51.25%	Loss: 0.721044
+2025-03-23 05:39:20 - __main__ - INFO - Train epoch: 11 [120/282]	Accuracy: 45.31%	Loss: 0.727121
+2025-03-23 05:40:23 - __main__ - INFO - Train epoch: 11 [130/282]	Accuracy: 49.38%	Loss: 0.724740
+2025-03-23 05:41:26 - __main__ - INFO - Train epoch: 11 [140/282]	Accuracy: 48.44%	Loss: 0.722908
+2025-03-23 05:42:30 - __main__ - INFO - Train epoch: 11 [150/282]	Accuracy: 46.88%	Loss: 0.725139
+2025-03-23 05:43:33 - __main__ - INFO - Train epoch: 11 [160/282]	Accuracy: 50.31%	Loss: 0.722091
+2025-03-23 05:44:36 - __main__ - INFO - Train epoch: 11 [170/282]	Accuracy: 56.88%	Loss: 0.717273
+2025-03-23 05:45:39 - __main__ - INFO - Train epoch: 11 [180/282]	Accuracy: 51.25%	Loss: 0.723333
+2025-03-23 05:46:43 - __main__ - INFO - Train epoch: 11 [190/282]	Accuracy: 47.50%	Loss: 0.723601
+2025-03-23 05:47:46 - __main__ - INFO - Train epoch: 11 [200/282]	Accuracy: 45.62%	Loss: 0.729873
+2025-03-23 05:48:50 - __main__ - INFO - Train epoch: 11 [210/282]	Accuracy: 49.69%	Loss: 0.724970
+2025-03-23 05:49:53 - __main__ - INFO - Train epoch: 11 [220/282]	Accuracy: 46.56%	Loss: 0.723916
+2025-03-23 05:50:56 - __main__ - INFO - Train epoch: 11 [230/282]	Accuracy: 48.12%	Loss: 0.725477
+2025-03-23 05:51:59 - __main__ - INFO - Train epoch: 11 [240/282]	Accuracy: 47.19%	Loss: 0.726364
+2025-03-23 05:53:03 - __main__ - INFO - Train epoch: 11 [250/282]	Accuracy: 50.62%	Loss: 0.722669
+2025-03-23 05:54:06 - __main__ - INFO - Train epoch: 11 [260/282]	Accuracy: 47.50%	Loss: 0.725126
+2025-03-23 05:55:09 - __main__ - INFO - Train epoch: 11 [270/282]	Accuracy: 52.19%	Loss: 0.718822
+2025-03-23 05:56:12 - __main__ - INFO - Train epoch: 11 [280/282]	Accuracy: 53.75%	Loss: 0.721946
+2025-03-23 05:56:25 - __main__ - INFO - Time: 19634.26704287529
+2025-03-23 05:56:25 - __main__ - INFO - Test
+2025-03-23 05:56:30 - __main__ - INFO - Test set: Loss: 0.7241, Accuracy: 48.66%
+2025-03-23 05:56:30 - __main__ - INFO - Test set: Loss: 0.7241, Accuracy: 48.66%
+2025-03-23 05:56:30 - __main__ - INFO - Best accuracy: 0.5401785714285714
+2025-03-23 05:56:30 - __main__ - INFO - Time: 19639.751712083817
+2025-03-23 05:56:30 - __main__ - INFO - Epoch: 12
+2025-03-23 05:56:30 - __main__ - INFO - Train
+2025-03-23 05:57:30 - __main__ - INFO - Train epoch: 12 [10/282]	Accuracy: 51.56%	Loss: 0.720702
+2025-03-23 05:58:33 - __main__ - INFO - Train epoch: 12 [20/282]	Accuracy: 52.19%	Loss: 0.721970
+2025-03-23 05:59:36 - __main__ - INFO - Train epoch: 12 [30/282]	Accuracy: 52.19%	Loss: 0.721685
+2025-03-23 06:00:40 - __main__ - INFO - Train epoch: 12 [40/282]	Accuracy: 44.06%	Loss: 0.725446
+2025-03-23 06:01:43 - __main__ - INFO - Train epoch: 12 [50/282]	Accuracy: 50.00%	Loss: 0.721135
+2025-03-23 06:02:46 - __main__ - INFO - Train epoch: 12 [60/282]	Accuracy: 51.88%	Loss: 0.721303
+2025-03-23 06:03:50 - __main__ - INFO - Train epoch: 12 [70/282]	Accuracy: 50.31%	Loss: 0.722725
+2025-03-23 06:04:53 - __main__ - INFO - Train epoch: 12 [80/282]	Accuracy: 50.62%	Loss: 0.722361
+2025-03-23 06:05:56 - __main__ - INFO - Train epoch: 12 [90/282]	Accuracy: 44.69%	Loss: 0.728197
+2025-03-23 06:06:59 - __main__ - INFO - Train epoch: 12 [100/282]	Accuracy: 48.12%	Loss: 0.726496
+2025-03-23 06:08:03 - __main__ - INFO - Train epoch: 12 [110/282]	Accuracy: 54.06%	Loss: 0.721057
+2025-03-23 06:09:06 - __main__ - INFO - Train epoch: 12 [120/282]	Accuracy: 51.88%	Loss: 0.722597
+2025-03-23 06:10:09 - __main__ - INFO - Train epoch: 12 [130/282]	Accuracy: 49.69%	Loss: 0.725727
+2025-03-23 06:11:12 - __main__ - INFO - Train epoch: 12 [140/282]	Accuracy: 42.19%	Loss: 0.730211
+2025-03-23 06:12:15 - __main__ - INFO - Train epoch: 12 [150/282]	Accuracy: 50.00%	Loss: 0.724133
+2025-03-23 06:13:19 - __main__ - INFO - Train epoch: 12 [160/282]	Accuracy: 52.81%	Loss: 0.718573
+2025-03-23 06:14:22 - __main__ - INFO - Train epoch: 12 [170/282]	Accuracy: 50.94%	Loss: 0.725745
+2025-03-23 06:15:25 - __main__ - INFO - Train epoch: 12 [180/282]	Accuracy: 46.56%	Loss: 0.725596
+2025-03-23 06:16:29 - __main__ - INFO - Train epoch: 12 [190/282]	Accuracy: 45.62%	Loss: 0.723924
+2025-03-23 06:17:32 - __main__ - INFO - Train epoch: 12 [200/282]	Accuracy: 46.25%	Loss: 0.727519
+2025-03-23 06:18:35 - __main__ - INFO - Train epoch: 12 [210/282]	Accuracy: 52.19%	Loss: 0.721643
+2025-03-23 06:19:38 - __main__ - INFO - Train epoch: 12 [220/282]	Accuracy: 47.19%	Loss: 0.724549
+2025-03-23 06:20:42 - __main__ - INFO - Train epoch: 12 [230/282]	Accuracy: 48.75%	Loss: 0.724658
+2025-03-23 06:21:45 - __main__ - INFO - Train epoch: 12 [240/282]	Accuracy: 52.19%	Loss: 0.720406
+2025-03-23 06:22:49 - __main__ - INFO - Train epoch: 12 [250/282]	Accuracy: 50.31%	Loss: 0.726442
+2025-03-23 06:23:52 - __main__ - INFO - Train epoch: 12 [260/282]	Accuracy: 48.44%	Loss: 0.725925
+2025-03-23 06:24:55 - __main__ - INFO - Train epoch: 12 [270/282]	Accuracy: 52.19%	Loss: 0.723834
+2025-03-23 06:25:58 - __main__ - INFO - Train epoch: 12 [280/282]	Accuracy: 52.19%	Loss: 0.720455
+2025-03-23 06:26:11 - __main__ - INFO - Time: 21420.623135328293
+2025-03-23 06:26:11 - __main__ - INFO - Test
+2025-03-23 06:26:17 - __main__ - INFO - Test set: Loss: 0.7241, Accuracy: 50.00%
+2025-03-23 06:26:17 - __main__ - INFO - Test set: Loss: 0.7241, Accuracy: 50.00%
+2025-03-23 06:26:17 - __main__ - INFO - Best accuracy: 0.5401785714285714
+2025-03-23 06:26:17 - __main__ - INFO - Time: 21426.111567735672
+2025-03-23 06:26:17 - __main__ - INFO - Epoch: 13
+2025-03-23 06:26:17 - __main__ - INFO - Train
+2025-03-23 06:27:16 - __main__ - INFO - Train epoch: 13 [10/282]	Accuracy: 48.75%	Loss: 0.726526
+2025-03-23 06:28:19 - __main__ - INFO - Train epoch: 13 [20/282]	Accuracy: 54.69%	Loss: 0.721552
+2025-03-23 06:29:23 - __main__ - INFO - Train epoch: 13 [30/282]	Accuracy: 48.75%	Loss: 0.727207
+2025-03-23 06:30:26 - __main__ - INFO - Train epoch: 13 [40/282]	Accuracy: 47.19%	Loss: 0.722618
+2025-03-23 06:31:29 - __main__ - INFO - Train epoch: 13 [50/282]	Accuracy: 45.62%	Loss: 0.722942
+2025-03-23 06:32:33 - __main__ - INFO - Train epoch: 13 [60/282]	Accuracy: 52.50%	Loss: 0.719050
+2025-03-23 06:33:36 - __main__ - INFO - Train epoch: 13 [70/282]	Accuracy: 55.00%	Loss: 0.719670
+2025-03-23 06:34:39 - __main__ - INFO - Train epoch: 13 [80/282]	Accuracy: 48.75%	Loss: 0.725325
+2025-03-23 06:35:43 - __main__ - INFO - Train epoch: 13 [90/282]	Accuracy: 50.94%	Loss: 0.721367
+2025-03-23 06:36:47 - __main__ - INFO - Train epoch: 13 [100/282]	Accuracy: 46.88%	Loss: 0.723957
+2025-03-23 06:37:50 - __main__ - INFO - Train epoch: 13 [110/282]	Accuracy: 53.12%	Loss: 0.720994
+2025-03-23 06:38:53 - __main__ - INFO - Train epoch: 13 [120/282]	Accuracy: 52.19%	Loss: 0.725507
+2025-03-23 06:39:57 - __main__ - INFO - Train epoch: 13 [130/282]	Accuracy: 52.19%	Loss: 0.722733
+2025-03-23 06:41:00 - __main__ - INFO - Train epoch: 13 [140/282]	Accuracy: 48.44%	Loss: 0.723319
+2025-03-23 06:42:04 - __main__ - INFO - Train epoch: 13 [150/282]	Accuracy: 52.50%	Loss: 0.722669
+2025-03-23 06:43:07 - __main__ - INFO - Train epoch: 13 [160/282]	Accuracy: 52.19%	Loss: 0.721806
+2025-03-23 06:44:11 - __main__ - INFO - Train epoch: 13 [170/282]	Accuracy: 51.88%	Loss: 0.723230
+2025-03-23 06:45:14 - __main__ - INFO - Train epoch: 13 [180/282]	Accuracy: 50.00%	Loss: 0.724772
+2025-03-23 06:46:17 - __main__ - INFO - Train epoch: 13 [190/282]	Accuracy: 52.81%	Loss: 0.721650
+2025-03-23 06:47:21 - __main__ - INFO - Train epoch: 13 [200/282]	Accuracy: 49.06%	Loss: 0.724434
+2025-03-23 06:48:24 - __main__ - INFO - Train epoch: 13 [210/282]	Accuracy: 50.94%	Loss: 0.720635
+2025-03-23 06:49:27 - __main__ - INFO - Train epoch: 13 [220/282]	Accuracy: 50.94%	Loss: 0.723358
+2025-03-23 06:50:31 - __main__ - INFO - Train epoch: 13 [230/282]	Accuracy: 51.56%	Loss: 0.725443
+2025-03-23 06:51:34 - __main__ - INFO - Train epoch: 13 [240/282]	Accuracy: 51.25%	Loss: 0.726219
+2025-03-23 06:52:37 - __main__ - INFO - Train epoch: 13 [250/282]	Accuracy: 52.19%	Loss: 0.719052
+2025-03-23 06:53:41 - __main__ - INFO - Train epoch: 13 [260/282]	Accuracy: 51.25%	Loss: 0.722232
+2025-03-23 06:54:44 - __main__ - INFO - Train epoch: 13 [270/282]	Accuracy: 49.38%	Loss: 0.726068
+2025-03-23 06:55:47 - __main__ - INFO - Train epoch: 13 [280/282]	Accuracy: 49.06%	Loss: 0.722898
+2025-03-23 06:56:00 - __main__ - INFO - Time: 23209.376051425934
+2025-03-23 06:56:00 - __main__ - INFO - Test
+2025-03-23 06:56:05 - __main__ - INFO - Test set: Loss: 0.7236, Accuracy: 48.66%
+2025-03-23 06:56:05 - __main__ - INFO - Test set: Loss: 0.7236, Accuracy: 48.66%
+2025-03-23 06:56:05 - __main__ - INFO - Best accuracy: 0.5401785714285714
+2025-03-23 06:56:05 - __main__ - INFO - Time: 23214.8556265831
+2025-03-23 06:56:05 - __main__ - INFO - Epoch: 14
+2025-03-23 06:56:05 - __main__ - INFO - Train
+2025-03-23 06:57:05 - __main__ - INFO - Train epoch: 14 [10/282]	Accuracy: 49.38%	Loss: 0.724372
+2025-03-23 06:58:08 - __main__ - INFO - Train epoch: 14 [20/282]	Accuracy: 48.75%	Loss: 0.724162
+2025-03-23 06:59:12 - __main__ - INFO - Train epoch: 14 [30/282]	Accuracy: 47.19%	Loss: 0.724150
+2025-03-23 07:00:15 - __main__ - INFO - Train epoch: 14 [40/282]	Accuracy: 44.06%	Loss: 0.727885
+2025-03-23 07:01:19 - __main__ - INFO - Train epoch: 14 [50/282]	Accuracy: 50.62%	Loss: 0.720103
+2025-03-23 07:02:22 - __main__ - INFO - Train epoch: 14 [60/282]	Accuracy: 54.06%	Loss: 0.721213
+2025-03-23 07:03:25 - __main__ - INFO - Train epoch: 14 [70/282]	Accuracy: 53.12%	Loss: 0.723665
+2025-03-23 07:04:29 - __main__ - INFO - Train epoch: 14 [80/282]	Accuracy: 51.25%	Loss: 0.723693
+2025-03-23 07:05:32 - __main__ - INFO - Train epoch: 14 [90/282]	Accuracy: 49.06%	Loss: 0.722456
+2025-03-23 07:06:35 - __main__ - INFO - Train epoch: 14 [100/282]	Accuracy: 51.88%	Loss: 0.719037
+2025-03-23 07:07:39 - __main__ - INFO - Train epoch: 14 [110/282]	Accuracy: 49.06%	Loss: 0.725293
+2025-03-23 07:08:42 - __main__ - INFO - Train epoch: 14 [120/282]	Accuracy: 46.56%	Loss: 0.727467
+2025-03-23 07:09:45 - __main__ - INFO - Train epoch: 14 [130/282]	Accuracy: 52.81%	Loss: 0.723177
+2025-03-23 07:10:49 - __main__ - INFO - Train epoch: 14 [140/282]	Accuracy: 43.44%	Loss: 0.728004
+2025-03-23 07:11:52 - __main__ - INFO - Train epoch: 14 [150/282]	Accuracy: 51.56%	Loss: 0.721090
+2025-03-23 07:12:55 - __main__ - INFO - Train epoch: 14 [160/282]	Accuracy: 52.50%	Loss: 0.720007
+2025-03-23 07:13:59 - __main__ - INFO - Train epoch: 14 [170/282]	Accuracy: 50.31%	Loss: 0.722185
+2025-03-23 07:15:02 - __main__ - INFO - Train epoch: 14 [180/282]	Accuracy: 51.25%	Loss: 0.723236
+2025-03-23 07:16:05 - __main__ - INFO - Train epoch: 14 [190/282]	Accuracy: 50.00%	Loss: 0.724014
+2025-03-23 07:17:08 - __main__ - INFO - Train epoch: 14 [200/282]	Accuracy: 46.25%	Loss: 0.727339
+2025-03-23 07:18:12 - __main__ - INFO - Train epoch: 14 [210/282]	Accuracy: 49.06%	Loss: 0.727869
+2025-03-23 07:19:15 - __main__ - INFO - Train epoch: 14 [220/282]	Accuracy: 49.06%	Loss: 0.723821
+2025-03-23 07:20:19 - __main__ - INFO - Train epoch: 14 [230/282]	Accuracy: 47.19%	Loss: 0.727995
+2025-03-23 07:21:22 - __main__ - INFO - Train epoch: 14 [240/282]	Accuracy: 45.94%	Loss: 0.726483
+2025-03-23 07:22:25 - __main__ - INFO - Train epoch: 14 [250/282]	Accuracy: 51.25%	Loss: 0.723607
+2025-03-23 07:23:29 - __main__ - INFO - Train epoch: 14 [260/282]	Accuracy: 48.44%	Loss: 0.724643
+2025-03-23 07:24:32 - __main__ - INFO - Train epoch: 14 [270/282]	Accuracy: 51.88%	Loss: 0.722381
+2025-03-23 07:25:35 - __main__ - INFO - Train epoch: 14 [280/282]	Accuracy: 46.56%	Loss: 0.725410
+2025-03-23 07:25:48 - __main__ - INFO - Time: 24997.229559898376
+2025-03-23 07:25:48 - __main__ - INFO - Test
+2025-03-23 07:25:53 - __main__ - INFO - Test set: Loss: 0.7235, Accuracy: 54.46%
+2025-03-23 07:25:53 - __main__ - INFO - Test set: Loss: 0.7235, Accuracy: 54.46%
+2025-03-23 07:25:53 - __main__ - INFO - Best accuracy: 0.5446428571428571
+2025-03-23 07:25:53 - __main__ - INFO - Time: 25002.774405002594
+2025-03-23 07:25:53 - __main__ - INFO - Epoch: 15
+2025-03-23 07:25:53 - __main__ - INFO - Train
+2025-03-23 07:26:53 - __main__ - INFO - Train epoch: 15 [10/282]	Accuracy: 46.56%	Loss: 0.723628
+2025-03-23 07:27:56 - __main__ - INFO - Train epoch: 15 [20/282]	Accuracy: 45.62%	Loss: 0.728640
+2025-03-23 07:28:59 - __main__ - INFO - Train epoch: 15 [30/282]	Accuracy: 48.44%	Loss: 0.724235
+2025-03-23 07:30:02 - __main__ - INFO - Train epoch: 15 [40/282]	Accuracy: 52.50%	Loss: 0.719760
+2025-03-23 07:31:06 - __main__ - INFO - Train epoch: 15 [50/282]	Accuracy: 43.75%	Loss: 0.727807
+2025-03-23 07:32:09 - __main__ - INFO - Train epoch: 15 [60/282]	Accuracy: 48.75%	Loss: 0.723146
+2025-03-23 07:33:12 - __main__ - INFO - Train epoch: 15 [70/282]	Accuracy: 50.00%	Loss: 0.725106
+2025-03-23 07:34:16 - __main__ - INFO - Train epoch: 15 [80/282]	Accuracy: 52.50%	Loss: 0.723384
+2025-03-23 07:35:19 - __main__ - INFO - Train epoch: 15 [90/282]	Accuracy: 54.06%	Loss: 0.722562
+2025-03-23 07:36:22 - __main__ - INFO - Train epoch: 15 [100/282]	Accuracy: 52.50%	Loss: 0.719364
+2025-03-23 07:37:26 - __main__ - INFO - Train epoch: 15 [110/282]	Accuracy: 45.00%	Loss: 0.724650
+2025-03-23 07:38:29 - __main__ - INFO - Train epoch: 15 [120/282]	Accuracy: 56.56%	Loss: 0.721967
+2025-03-23 07:39:33 - __main__ - INFO - Train epoch: 15 [130/282]	Accuracy: 51.25%	Loss: 0.720850
+2025-03-23 07:40:36 - __main__ - INFO - Train epoch: 15 [140/282]	Accuracy: 46.25%	Loss: 0.723969
+2025-03-23 07:41:40 - __main__ - INFO - Train epoch: 15 [150/282]	Accuracy: 46.25%	Loss: 0.726247
+2025-03-23 07:42:43 - __main__ - INFO - Train epoch: 15 [160/282]	Accuracy: 49.06%	Loss: 0.724810
+2025-03-23 07:43:46 - __main__ - INFO - Train epoch: 15 [170/282]	Accuracy: 46.25%	Loss: 0.725604
+2025-03-23 07:44:50 - __main__ - INFO - Train epoch: 15 [180/282]	Accuracy: 51.56%	Loss: 0.723901
+2025-03-23 07:45:53 - __main__ - INFO - Train epoch: 15 [190/282]	Accuracy: 53.12%	Loss: 0.722503
+2025-03-23 07:46:57 - __main__ - INFO - Train epoch: 15 [200/282]	Accuracy: 47.19%	Loss: 0.724335
+2025-03-23 07:48:00 - __main__ - INFO - Train epoch: 15 [210/282]	Accuracy: 49.06%	Loss: 0.722383
+2025-03-23 07:49:04 - __main__ - INFO - Train epoch: 15 [220/282]	Accuracy: 50.31%	Loss: 0.723287
+2025-03-23 07:50:07 - __main__ - INFO - Train epoch: 15 [230/282]	Accuracy: 50.00%	Loss: 0.723684
+2025-03-23 07:51:11 - __main__ - INFO - Train epoch: 15 [240/282]	Accuracy: 48.12%	Loss: 0.723570
+2025-03-23 07:52:14 - __main__ - INFO - Train epoch: 15 [250/282]	Accuracy: 47.19%	Loss: 0.724042
+2025-03-23 07:53:17 - __main__ - INFO - Train epoch: 15 [260/282]	Accuracy: 46.56%	Loss: 0.724340
+2025-03-23 07:54:21 - __main__ - INFO - Train epoch: 15 [270/282]	Accuracy: 52.50%	Loss: 0.720624
+2025-03-23 07:55:24 - __main__ - INFO - Train epoch: 15 [280/282]	Accuracy: 47.50%	Loss: 0.722216
+2025-03-23 07:55:37 - __main__ - INFO - Time: 26786.250854492188
+2025-03-23 07:55:37 - __main__ - INFO - Test
+2025-03-23 07:55:42 - __main__ - INFO - Test set: Loss: 0.7250, Accuracy: 48.66%
+2025-03-23 07:55:42 - __main__ - INFO - Test set: Loss: 0.7250, Accuracy: 48.66%
+2025-03-23 07:55:42 - __main__ - INFO - Best accuracy: 0.5446428571428571
+2025-03-23 07:55:42 - __main__ - INFO - Time: 26791.762112140656
+2025-03-23 07:55:42 - __main__ - INFO - Epoch: 16
+2025-03-23 07:55:42 - __main__ - INFO - Train
+2025-03-23 07:56:42 - __main__ - INFO - Train epoch: 16 [10/282]	Accuracy: 52.50%	Loss: 0.720420
+2025-03-23 07:57:45 - __main__ - INFO - Train epoch: 16 [20/282]	Accuracy: 52.81%	Loss: 0.721591
+2025-03-23 07:58:48 - __main__ - INFO - Train epoch: 16 [30/282]	Accuracy: 50.31%	Loss: 0.721646
+2025-03-23 07:59:52 - __main__ - INFO - Train epoch: 16 [40/282]	Accuracy: 45.94%	Loss: 0.726924
+2025-03-23 08:00:55 - __main__ - INFO - Train epoch: 16 [50/282]	Accuracy: 47.19%	Loss: 0.725063
+2025-03-23 08:01:58 - __main__ - INFO - Train epoch: 16 [60/282]	Accuracy: 48.75%	Loss: 0.722153
+2025-03-23 08:03:01 - __main__ - INFO - Train epoch: 16 [70/282]	Accuracy: 50.31%	Loss: 0.722148
+2025-03-23 08:04:04 - __main__ - INFO - Train epoch: 16 [80/282]	Accuracy: 52.81%	Loss: 0.718422
+2025-03-23 08:05:08 - __main__ - INFO - Train epoch: 16 [90/282]	Accuracy: 51.25%	Loss: 0.719622
+2025-03-23 08:06:11 - __main__ - INFO - Train epoch: 16 [100/282]	Accuracy: 49.38%	Loss: 0.721365
+2025-03-23 08:07:15 - __main__ - INFO - Train epoch: 16 [110/282]	Accuracy: 50.62%	Loss: 0.723747
+2025-03-23 08:08:18 - __main__ - INFO - Train epoch: 16 [120/282]	Accuracy: 47.81%	Loss: 0.724107
+2025-03-23 08:09:22 - __main__ - INFO - Train epoch: 16 [130/282]	Accuracy: 50.00%	Loss: 0.722698
+2025-03-23 08:10:25 - __main__ - INFO - Train epoch: 16 [140/282]	Accuracy: 51.88%	Loss: 0.718984
+2025-03-23 08:11:28 - __main__ - INFO - Train epoch: 16 [150/282]	Accuracy: 48.12%	Loss: 0.725264
+2025-03-23 08:12:32 - __main__ - INFO - Train epoch: 16 [160/282]	Accuracy: 49.06%	Loss: 0.723083
+2025-03-23 08:13:35 - __main__ - INFO - Train epoch: 16 [170/282]	Accuracy: 50.31%	Loss: 0.721714
+2025-03-23 08:14:39 - __main__ - INFO - Train epoch: 16 [180/282]	Accuracy: 50.00%	Loss: 0.727016
+2025-03-23 08:15:42 - __main__ - INFO - Train epoch: 16 [190/282]	Accuracy: 53.12%	Loss: 0.723418
+2025-03-23 08:16:45 - __main__ - INFO - Train epoch: 16 [200/282]	Accuracy: 51.88%	Loss: 0.722070
+2025-03-23 08:17:49 - __main__ - INFO - Train epoch: 16 [210/282]	Accuracy: 47.81%	Loss: 0.722032
+2025-03-23 08:18:52 - __main__ - INFO - Train epoch: 16 [220/282]	Accuracy: 47.81%	Loss: 0.722844
+2025-03-23 08:19:55 - __main__ - INFO - Train epoch: 16 [230/282]	Accuracy: 51.25%	Loss: 0.720590
+2025-03-23 08:20:59 - __main__ - INFO - Train epoch: 16 [240/282]	Accuracy: 48.75%	Loss: 0.724210
+2025-03-23 08:22:02 - __main__ - INFO - Train epoch: 16 [250/282]	Accuracy: 44.69%	Loss: 0.727844
+2025-03-23 08:23:06 - __main__ - INFO - Train epoch: 16 [260/282]	Accuracy: 49.06%	Loss: 0.724173
+2025-03-23 08:24:09 - __main__ - INFO - Train epoch: 16 [270/282]	Accuracy: 48.44%	Loss: 0.722023
+2025-03-23 08:25:13 - __main__ - INFO - Train epoch: 16 [280/282]	Accuracy: 54.06%	Loss: 0.718453
+2025-03-23 08:25:25 - __main__ - INFO - Time: 28574.637858867645
+2025-03-23 08:25:25 - __main__ - INFO - Test
+2025-03-23 08:25:31 - __main__ - INFO - Test set: Loss: 0.7231, Accuracy: 48.66%
+2025-03-23 08:25:31 - __main__ - INFO - Test set: Loss: 0.7231, Accuracy: 48.66%
+2025-03-23 08:25:31 - __main__ - INFO - Best accuracy: 0.5446428571428571
+2025-03-23 08:25:31 - __main__ - INFO - Time: 28580.220497608185
+2025-03-23 08:25:31 - __main__ - INFO - Epoch: 17
+2025-03-23 08:25:31 - __main__ - INFO - Train
+2025-03-23 08:26:30 - __main__ - INFO - Train epoch: 17 [10/282]	Accuracy: 50.00%	Loss: 0.723920
+2025-03-23 08:27:34 - __main__ - INFO - Train epoch: 17 [20/282]	Accuracy: 55.31%	Loss: 0.721622
+2025-03-23 08:28:37 - __main__ - INFO - Train epoch: 17 [30/282]	Accuracy: 52.19%	Loss: 0.723480
+2025-03-23 08:29:40 - __main__ - INFO - Train epoch: 17 [40/282]	Accuracy: 47.19%	Loss: 0.727727
+2025-03-23 08:30:44 - __main__ - INFO - Train epoch: 17 [50/282]	Accuracy: 49.69%	Loss: 0.721687
+2025-03-23 08:31:47 - __main__ - INFO - Train epoch: 17 [60/282]	Accuracy: 48.12%	Loss: 0.721600
+2025-03-23 08:32:51 - __main__ - INFO - Train epoch: 17 [70/282]	Accuracy: 53.44%	Loss: 0.722424
+2025-03-23 08:33:54 - __main__ - INFO - Train epoch: 17 [80/282]	Accuracy: 50.31%	Loss: 0.720150
+2025-03-23 08:34:57 - __main__ - INFO - Train epoch: 17 [90/282]	Accuracy: 50.31%	Loss: 0.723506
+2025-03-23 08:36:01 - __main__ - INFO - Train epoch: 17 [100/282]	Accuracy: 53.75%	Loss: 0.720774
+2025-03-23 08:37:04 - __main__ - INFO - Train epoch: 17 [110/282]	Accuracy: 52.19%	Loss: 0.723372
+2025-03-23 08:38:08 - __main__ - INFO - Train epoch: 17 [120/282]	Accuracy: 47.19%	Loss: 0.725776
+2025-03-23 08:39:11 - __main__ - INFO - Train epoch: 17 [130/282]	Accuracy: 48.44%	Loss: 0.724519
+2025-03-23 08:40:14 - __main__ - INFO - Train epoch: 17 [140/282]	Accuracy: 49.06%	Loss: 0.723135
+2025-03-23 08:41:18 - __main__ - INFO - Train epoch: 17 [150/282]	Accuracy: 49.06%	Loss: 0.724875
+2025-03-23 08:42:22 - __main__ - INFO - Train epoch: 17 [160/282]	Accuracy: 50.62%	Loss: 0.720730
+2025-03-23 08:43:25 - __main__ - INFO - Train epoch: 17 [170/282]	Accuracy: 53.44%	Loss: 0.720948
+2025-03-23 08:44:29 - __main__ - INFO - Train epoch: 17 [180/282]	Accuracy: 52.81%	Loss: 0.723184
+2025-03-23 08:45:32 - __main__ - INFO - Train epoch: 17 [190/282]	Accuracy: 48.44%	Loss: 0.726237
+2025-03-23 08:46:36 - __main__ - INFO - Train epoch: 17 [200/282]	Accuracy: 44.06%	Loss: 0.727506
+2025-03-23 08:47:39 - __main__ - INFO - Train epoch: 17 [210/282]	Accuracy: 54.69%	Loss: 0.720859
+2025-03-23 08:48:43 - __main__ - INFO - Train epoch: 17 [220/282]	Accuracy: 48.44%	Loss: 0.725045
+2025-03-23 08:49:46 - __main__ - INFO - Train epoch: 17 [230/282]	Accuracy: 52.81%	Loss: 0.721776
+2025-03-23 08:50:50 - __main__ - INFO - Train epoch: 17 [240/282]	Accuracy: 41.88%	Loss: 0.731785
+2025-03-23 08:51:53 - __main__ - INFO - Train epoch: 17 [250/282]	Accuracy: 49.06%	Loss: 0.727259
+2025-03-23 08:52:57 - __main__ - INFO - Train epoch: 17 [260/282]	Accuracy: 46.88%	Loss: 0.727433
+2025-03-23 08:54:00 - __main__ - INFO - Train epoch: 17 [270/282]	Accuracy: 41.25%	Loss: 0.726152
+2025-03-23 08:55:03 - __main__ - INFO - Train epoch: 17 [280/282]	Accuracy: 51.56%	Loss: 0.720841
+2025-03-23 08:55:16 - __main__ - INFO - Time: 30365.572103738785
+2025-03-23 08:55:16 - __main__ - INFO - Test
+2025-03-23 08:55:22 - __main__ - INFO - Test set: Loss: 0.7233, Accuracy: 50.00%
+2025-03-23 08:55:22 - __main__ - INFO - Test set: Loss: 0.7233, Accuracy: 50.00%
+2025-03-23 08:55:22 - __main__ - INFO - Best accuracy: 0.5446428571428571
+2025-03-23 08:55:22 - __main__ - INFO - Time: 30371.089782714844
+2025-03-23 08:55:22 - __main__ - INFO - Epoch: 18
+2025-03-23 08:55:22 - __main__ - INFO - Train
+2025-03-23 08:56:21 - __main__ - INFO - Train epoch: 18 [10/282]	Accuracy: 49.69%	Loss: 0.722604
+2025-03-23 08:57:25 - __main__ - INFO - Train epoch: 18 [20/282]	Accuracy: 51.25%	Loss: 0.723861
+2025-03-23 08:58:28 - __main__ - INFO - Train epoch: 18 [30/282]	Accuracy: 52.50%	Loss: 0.722668
+2025-03-23 08:59:31 - __main__ - INFO - Train epoch: 18 [40/282]	Accuracy: 46.56%	Loss: 0.724205
+2025-03-23 09:00:35 - __main__ - INFO - Train epoch: 18 [50/282]	Accuracy: 50.00%	Loss: 0.719981
+2025-03-23 09:01:38 - __main__ - INFO - Train epoch: 18 [60/282]	Accuracy: 46.25%	Loss: 0.727108
+2025-03-23 09:02:42 - __main__ - INFO - Train epoch: 18 [70/282]	Accuracy: 51.25%	Loss: 0.722705
+2025-03-23 09:03:45 - __main__ - INFO - Train epoch: 18 [80/282]	Accuracy: 52.50%	Loss: 0.721064
+2025-03-23 09:04:49 - __main__ - INFO - Train epoch: 18 [90/282]	Accuracy: 51.25%	Loss: 0.721111
+2025-03-23 09:05:52 - __main__ - INFO - Train epoch: 18 [100/282]	Accuracy: 50.94%	Loss: 0.725504
+2025-03-23 09:06:56 - __main__ - INFO - Train epoch: 18 [110/282]	Accuracy: 50.94%	Loss: 0.722205
+2025-03-23 09:07:59 - __main__ - INFO - Train epoch: 18 [120/282]	Accuracy: 50.31%	Loss: 0.725263
+2025-03-23 09:09:03 - __main__ - INFO - Train epoch: 18 [130/282]	Accuracy: 55.00%	Loss: 0.721959
+2025-03-23 09:10:07 - __main__ - INFO - Train epoch: 18 [140/282]	Accuracy: 50.31%	Loss: 0.720599
+2025-03-23 09:11:10 - __main__ - INFO - Train epoch: 18 [150/282]	Accuracy: 47.19%	Loss: 0.727103
+2025-03-23 09:12:14 - __main__ - INFO - Train epoch: 18 [160/282]	Accuracy: 50.00%	Loss: 0.725514
+2025-03-23 09:13:17 - __main__ - INFO - Train epoch: 18 [170/282]	Accuracy: 49.38%	Loss: 0.724694
+2025-03-23 09:14:21 - __main__ - INFO - Train epoch: 18 [180/282]	Accuracy: 49.38%	Loss: 0.723811
+2025-03-23 09:15:24 - __main__ - INFO - Train epoch: 18 [190/282]	Accuracy: 48.44%	Loss: 0.725554
+2025-03-23 09:16:27 - __main__ - INFO - Train epoch: 18 [200/282]	Accuracy: 53.75%	Loss: 0.721413
+2025-03-23 09:17:31 - __main__ - INFO - Train epoch: 18 [210/282]	Accuracy: 48.75%	Loss: 0.727387
+2025-03-23 09:18:34 - __main__ - INFO - Train epoch: 18 [220/282]	Accuracy: 55.00%	Loss: 0.718359
+2025-03-23 09:19:38 - __main__ - INFO - Train epoch: 18 [230/282]	Accuracy: 46.88%	Loss: 0.723832
+2025-03-23 09:20:41 - __main__ - INFO - Train epoch: 18 [240/282]	Accuracy: 48.12%	Loss: 0.722057
+2025-03-23 09:21:45 - __main__ - INFO - Train epoch: 18 [250/282]	Accuracy: 49.06%	Loss: 0.727019
+2025-03-23 09:22:48 - __main__ - INFO - Train epoch: 18 [260/282]	Accuracy: 47.50%	Loss: 0.724393
+2025-03-23 09:23:52 - __main__ - INFO - Train epoch: 18 [270/282]	Accuracy: 52.81%	Loss: 0.720204
+2025-03-23 09:24:55 - __main__ - INFO - Train epoch: 18 [280/282]	Accuracy: 49.06%	Loss: 0.724468
+2025-03-23 09:25:08 - __main__ - INFO - Time: 32157.180737495422
+2025-03-23 09:25:08 - __main__ - INFO - Test
+2025-03-23 09:25:13 - __main__ - INFO - Test set: Loss: 0.7227, Accuracy: 54.02%
+2025-03-23 09:25:13 - __main__ - INFO - Test set: Loss: 0.7227, Accuracy: 54.02%
+2025-03-23 09:25:13 - __main__ - INFO - Best accuracy: 0.5446428571428571
+2025-03-23 09:25:13 - __main__ - INFO - Time: 32162.74353170395
+2025-03-23 09:25:13 - __main__ - INFO - Epoch: 19
+2025-03-23 09:25:13 - __main__ - INFO - Train
+2025-03-23 09:26:13 - __main__ - INFO - Train epoch: 19 [10/282]	Accuracy: 53.12%	Loss: 0.720604
+2025-03-23 09:27:16 - __main__ - INFO - Train epoch: 19 [20/282]	Accuracy: 47.19%	Loss: 0.721942
+2025-03-23 09:28:20 - __main__ - INFO - Train epoch: 19 [30/282]	Accuracy: 47.81%	Loss: 0.725902
+2025-03-23 09:29:23 - __main__ - INFO - Train epoch: 19 [40/282]	Accuracy: 48.12%	Loss: 0.723803
+2025-03-23 09:30:27 - __main__ - INFO - Train epoch: 19 [50/282]	Accuracy: 48.75%	Loss: 0.719750
+2025-03-23 09:31:30 - __main__ - INFO - Train epoch: 19 [60/282]	Accuracy: 53.44%	Loss: 0.722657
+2025-03-23 09:32:34 - __main__ - INFO - Train epoch: 19 [70/282]	Accuracy: 51.88%	Loss: 0.721659
+2025-03-23 09:33:37 - __main__ - INFO - Train epoch: 19 [80/282]	Accuracy: 52.50%	Loss: 0.720070
+2025-03-23 09:34:41 - __main__ - INFO - Train epoch: 19 [90/282]	Accuracy: 49.06%	Loss: 0.723240
+2025-03-23 09:35:44 - __main__ - INFO - Train epoch: 19 [100/282]	Accuracy: 51.25%	Loss: 0.722064
+2025-03-23 09:36:48 - __main__ - INFO - Train epoch: 19 [110/282]	Accuracy: 51.25%	Loss: 0.722900
+2025-03-23 09:37:51 - __main__ - INFO - Train epoch: 19 [120/282]	Accuracy: 47.50%	Loss: 0.725368
+2025-03-23 09:38:55 - __main__ - INFO - Train epoch: 19 [130/282]	Accuracy: 45.62%	Loss: 0.723338
+2025-03-23 09:39:59 - __main__ - INFO - Train epoch: 19 [140/282]	Accuracy: 49.06%	Loss: 0.726354
+2025-03-23 09:41:02 - __main__ - INFO - Train epoch: 19 [150/282]	Accuracy: 48.12%	Loss: 0.726912
+2025-03-23 09:42:06 - __main__ - INFO - Train epoch: 19 [160/282]	Accuracy: 47.50%	Loss: 0.724328
+2025-03-23 09:43:10 - __main__ - INFO - Train epoch: 19 [170/282]	Accuracy: 53.75%	Loss: 0.720312
+2025-03-23 09:44:13 - __main__ - INFO - Train epoch: 19 [180/282]	Accuracy: 52.50%	Loss: 0.722439
+2025-03-23 09:45:17 - __main__ - INFO - Train epoch: 19 [190/282]	Accuracy: 51.88%	Loss: 0.720339
+2025-03-23 09:46:20 - __main__ - INFO - Train epoch: 19 [200/282]	Accuracy: 48.75%	Loss: 0.725502
+2025-03-23 09:47:24 - __main__ - INFO - Train epoch: 19 [210/282]	Accuracy: 49.69%	Loss: 0.721817
+2025-03-23 09:48:28 - __main__ - INFO - Train epoch: 19 [220/282]	Accuracy: 50.00%	Loss: 0.726516
+2025-03-23 09:49:31 - __main__ - INFO - Train epoch: 19 [230/282]	Accuracy: 49.06%	Loss: 0.725693
+2025-03-23 09:50:35 - __main__ - INFO - Train epoch: 19 [240/282]	Accuracy: 50.94%	Loss: 0.720792
+2025-03-23 09:51:38 - __main__ - INFO - Train epoch: 19 [250/282]	Accuracy: 50.94%	Loss: 0.723081
+2025-03-23 09:52:42 - __main__ - INFO - Train epoch: 19 [260/282]	Accuracy: 53.12%	Loss: 0.720952
+2025-03-23 09:53:45 - __main__ - INFO - Train epoch: 19 [270/282]	Accuracy: 56.88%	Loss: 0.718372
+2025-03-23 09:54:49 - __main__ - INFO - Train epoch: 19 [280/282]	Accuracy: 50.94%	Loss: 0.721442
+2025-03-23 09:55:01 - __main__ - INFO - Time: 33950.748720407486
+2025-03-23 09:55:01 - __main__ - INFO - Test
+2025-03-23 09:55:07 - __main__ - INFO - Test set: Loss: 0.7239, Accuracy: 51.34%
+2025-03-23 09:55:07 - __main__ - INFO - Test set: Loss: 0.7239, Accuracy: 51.34%
+2025-03-23 09:55:07 - __main__ - INFO - Best accuracy: 0.5446428571428571
+2025-03-23 09:55:07 - __main__ - INFO - Time: 33956.240866184235
+2025-03-23 09:55:07 - __main__ - INFO - Epoch: 20
+2025-03-23 09:55:07 - __main__ - INFO - Train
+2025-03-23 09:56:06 - __main__ - INFO - Train epoch: 20 [10/282]	Accuracy: 50.00%	Loss: 0.721435
+2025-03-23 09:57:11 - __main__ - INFO - Train epoch: 20 [20/282]	Accuracy: 53.75%	Loss: 0.720393
+2025-03-23 09:58:15 - __main__ - INFO - Train epoch: 20 [30/282]	Accuracy: 49.06%	Loss: 0.723747
+2025-03-23 09:59:18 - __main__ - INFO - Train epoch: 20 [40/282]	Accuracy: 49.06%	Loss: 0.723109
+2025-03-23 10:00:22 - __main__ - INFO - Train epoch: 20 [50/282]	Accuracy: 45.31%	Loss: 0.725799
+2025-03-23 10:01:25 - __main__ - INFO - Train epoch: 20 [60/282]	Accuracy: 49.38%	Loss: 0.722814
+2025-03-23 10:02:29 - __main__ - INFO - Train epoch: 20 [70/282]	Accuracy: 44.38%	Loss: 0.724909
+2025-03-23 10:03:32 - __main__ - INFO - Train epoch: 20 [80/282]	Accuracy: 50.00%	Loss: 0.721898
+2025-03-23 10:04:36 - __main__ - INFO - Train epoch: 20 [90/282]	Accuracy: 53.12%	Loss: 0.723292
+2025-03-23 10:05:39 - __main__ - INFO - Train epoch: 20 [100/282]	Accuracy: 49.38%	Loss: 0.724387
+2025-03-23 10:06:43 - __main__ - INFO - Train epoch: 20 [110/282]	Accuracy: 45.94%	Loss: 0.727365
+2025-03-23 10:07:46 - __main__ - INFO - Train epoch: 20 [120/282]	Accuracy: 49.38%	Loss: 0.724996
+2025-03-23 10:08:50 - __main__ - INFO - Train epoch: 20 [130/282]	Accuracy: 55.31%	Loss: 0.721236
+2025-03-23 10:09:53 - __main__ - INFO - Train epoch: 20 [140/282]	Accuracy: 45.94%	Loss: 0.725095
+2025-03-23 10:10:56 - __main__ - INFO - Train epoch: 20 [150/282]	Accuracy: 47.81%	Loss: 0.726627
+2025-03-23 10:12:00 - __main__ - INFO - Train epoch: 20 [160/282]	Accuracy: 49.69%	Loss: 0.722354
+2025-03-23 10:13:04 - __main__ - INFO - Train epoch: 20 [170/282]	Accuracy: 48.44%	Loss: 0.723776
+2025-03-23 10:14:07 - __main__ - INFO - Train epoch: 20 [180/282]	Accuracy: 45.94%	Loss: 0.722443
+2025-03-23 10:15:11 - __main__ - INFO - Train epoch: 20 [190/282]	Accuracy: 49.06%	Loss: 0.724186
+2025-03-23 10:16:14 - __main__ - INFO - Train epoch: 20 [200/282]	Accuracy: 48.44%	Loss: 0.724240
+2025-03-23 10:17:18 - __main__ - INFO - Train epoch: 20 [210/282]	Accuracy: 46.56%	Loss: 0.725665
+2025-03-23 10:18:21 - __main__ - INFO - Train epoch: 20 [220/282]	Accuracy: 48.75%	Loss: 0.722641
+2025-03-23 10:19:25 - __main__ - INFO - Train epoch: 20 [230/282]	Accuracy: 52.50%	Loss: 0.721580
+2025-03-23 10:20:29 - __main__ - INFO - Train epoch: 20 [240/282]	Accuracy: 47.19%	Loss: 0.724637
+2025-03-23 10:21:32 - __main__ - INFO - Train epoch: 20 [250/282]	Accuracy: 51.25%	Loss: 0.722540
+2025-03-23 10:22:36 - __main__ - INFO - Train epoch: 20 [260/282]	Accuracy: 52.81%	Loss: 0.721417
+2025-03-23 10:23:39 - __main__ - INFO - Train epoch: 20 [270/282]	Accuracy: 50.31%	Loss: 0.726431
+2025-03-23 10:24:43 - __main__ - INFO - Train epoch: 20 [280/282]	Accuracy: 45.31%	Loss: 0.723882
+2025-03-23 10:24:56 - __main__ - INFO - Time: 35745.00037240982
+2025-03-23 10:24:56 - __main__ - INFO - Test
+2025-03-23 10:25:01 - __main__ - INFO - Test set: Loss: 0.7237, Accuracy: 48.66%
+2025-03-23 10:25:01 - __main__ - INFO - Test set: Loss: 0.7237, Accuracy: 48.66%
+2025-03-23 10:25:01 - __main__ - INFO - Best accuracy: 0.5446428571428571
+2025-03-23 10:25:01 - __main__ - INFO - Time: 35750.47244930267
+2025-03-23 10:25:01 - __main__ - INFO - Epoch: 21
+2025-03-23 10:25:01 - __main__ - INFO - Train
+2025-03-23 10:26:01 - __main__ - INFO - Train epoch: 21 [10/282]	Accuracy: 52.50%	Loss: 0.722577
+2025-03-23 10:27:04 - __main__ - INFO - Train epoch: 21 [20/282]	Accuracy: 53.75%	Loss: 0.717903
+2025-03-23 10:28:08 - __main__ - INFO - Train epoch: 21 [30/282]	Accuracy: 50.31%	Loss: 0.720137
+2025-03-23 10:29:11 - __main__ - INFO - Train epoch: 21 [40/282]	Accuracy: 51.56%	Loss: 0.725098
+2025-03-23 10:30:15 - __main__ - INFO - Train epoch: 21 [50/282]	Accuracy: 53.44%	Loss: 0.722751
+2025-03-23 10:31:18 - __main__ - INFO - Train epoch: 21 [60/282]	Accuracy: 53.44%	Loss: 0.720019
+2025-03-23 10:32:22 - __main__ - INFO - Train epoch: 21 [70/282]	Accuracy: 49.38%	Loss: 0.723687
+2025-03-23 10:33:25 - __main__ - INFO - Train epoch: 21 [80/282]	Accuracy: 51.56%	Loss: 0.722818
+2025-03-23 10:34:29 - __main__ - INFO - Train epoch: 21 [90/282]	Accuracy: 55.00%	Loss: 0.718567
+2025-03-23 10:35:32 - __main__ - INFO - Train epoch: 21 [100/282]	Accuracy: 52.81%	Loss: 0.723102
+2025-03-23 10:36:36 - __main__ - INFO - Train epoch: 21 [110/282]	Accuracy: 44.69%	Loss: 0.726995
+2025-03-23 10:37:40 - __main__ - INFO - Train epoch: 21 [120/282]	Accuracy: 47.50%	Loss: 0.723854
+2025-03-23 10:38:43 - __main__ - INFO - Train epoch: 21 [130/282]	Accuracy: 51.25%	Loss: 0.722937
+2025-03-23 10:39:47 - __main__ - INFO - Train epoch: 21 [140/282]	Accuracy: 49.69%	Loss: 0.724105
+2025-03-23 10:40:50 - __main__ - INFO - Train epoch: 21 [150/282]	Accuracy: 46.56%	Loss: 0.722898
+2025-03-23 10:41:54 - __main__ - INFO - Train epoch: 21 [160/282]	Accuracy: 48.75%	Loss: 0.723091
+2025-03-23 10:42:58 - __main__ - INFO - Train epoch: 21 [170/282]	Accuracy: 50.62%	Loss: 0.722673
+2025-03-23 10:44:05 - __main__ - INFO - Train epoch: 21 [180/282]	Accuracy: 52.81%	Loss: 0.721040
